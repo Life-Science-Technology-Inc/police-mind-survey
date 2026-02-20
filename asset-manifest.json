@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/police-mind-survey/static/css/main.54c7366a.css",
+    "main.js": "/police-mind-survey/static/js/main.09e9ed75.js",
+    "static/js/952.fed4e14b.chunk.js": "/police-mind-survey/static/js/952.fed4e14b.chunk.js",
+    "index.html": "/police-mind-survey/index.html",
+    "main.54c7366a.css.map": "/police-mind-survey/static/css/main.54c7366a.css.map",
+    "main.09e9ed75.js.map": "/police-mind-survey/static/js/main.09e9ed75.js.map",
+    "952.fed4e14b.chunk.js.map": "/police-mind-survey/static/js/952.fed4e14b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.54c7366a.css",
+    "static/js/main.09e9ed75.js"
+  ]
+}
