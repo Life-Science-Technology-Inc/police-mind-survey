@@ -50,7 +50,7 @@ const ExperimentCompletePage = () => {
       </header>
       
       <div className="home-title">
-        <h2>실험 종료 안내</h2>
+        <h2>서류 제출 안내</h2>
       </div>
 
       <main className="home-content">
@@ -66,10 +66,7 @@ const ExperimentCompletePage = () => {
               연구 종료 후 <strong>사례비 지급</strong>을 위해 다음을 업로드 또는 전송해 주세요.
             </p>
             <p className="description-text">
-              1. 핸드폰에 있는 <strong>삼성 헬스 데이터</strong>
-            </p>
-            <p className="description-text">
-              2. <strong>동의서 및 통장, 신분증 사본</strong>
+              <strong>동의서 및 통장, 신분증 사본</strong>
             </p>
           </div>
         </div>
