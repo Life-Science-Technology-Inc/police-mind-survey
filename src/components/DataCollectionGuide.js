@@ -3,6 +3,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import supabase from '../supabaseClient';
 import { REGISTRATION_STEPS } from '../config/registrationSteps';
 import { validatePhoneNumber, usePhoneNumber } from '../utils/phoneNumberUtils';
+import { buildSurveySyncPayload, syncScreeningProfile } from '../services/backendSync';
 
 const DataCollectionGuide = () => {
   const navigate = useNavigate();
@@ -182,6 +183,19 @@ const DataCollectionGuide = () => {
         console.error('Registration error:', error);
         setRegistrationError('등록 중 오류가 발생했습니다. 잠시 후 다시 시도해 주세요.');
         return;
+      }
+
+      try {
+        await syncScreeningProfile(
+          buildSurveySyncPayload({
+            personalInfo,
+            depressionScore,
+            anxietyScore,
+            stressScore,
+          })
+        );
+      } catch (syncError) {
+        console.warn('Backend screening sync failed after survey-person insert:', syncError);
       }
 
       // RPC 함수 결과 확인

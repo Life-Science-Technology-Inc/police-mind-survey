@@ -5,6 +5,7 @@ import { compressImage, formatFileSize, validateFileType, ALLOWED_IMAGE_TYPES, A
 import { REGISTRATION_STEPS } from '../config/registrationSteps';
 import { validatePhoneNumber, usePhoneNumber } from '../utils/phoneNumberUtils';
 import SignatureCanvas from 'react-signature-canvas';
+import { buildRegistrationSyncPayload, syncScreeningProfile } from '../services/backendSync';
 
 const MultiStepRegistration = () => {
   const navigate = useNavigate();
@@ -849,6 +850,18 @@ const MultiStepRegistration = () => {
 
       if (!updateSuccess) {
         throw new Error('데이터 업데이트에 실패했습니다. 관리자에게 문의해주세요.');
+      }
+
+      try {
+        await syncScreeningProfile(
+          buildRegistrationSyncPayload({
+            participantId,
+            phoneNumber: userData.phone,
+            userData,
+          })
+        );
+      } catch (syncError) {
+        console.warn('Backend screening sync failed after participant update:', syncError);
       }
 
       // 파일 업로드 처리 (스토리지 업로드 + DB 저장)
