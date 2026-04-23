@@ -23,6 +23,16 @@ export const buildSurveySyncPayload = ({ personalInfo, depressionScore, anxietyS
   phone_number: normalizePhoneNumber(personalInfo.phoneNumber),
   name: personalInfo.name?.trim(),
   email: personalInfo.email?.trim(),
+  preferred_participation_rounds: (personalInfo.preferredSessions || [])
+    .map((session) => (
+      {
+        round1: '1차',
+        round2: '2차',
+        noPreference: '상관없음',
+      }[session]
+    ))
+    .filter(Boolean)
+    .join(', '),
   phq9: depressionScore,
   gad7: anxietyScore,
   pss: stressScore,

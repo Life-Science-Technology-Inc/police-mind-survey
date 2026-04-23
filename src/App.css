@@ -1825,6 +1825,39 @@ input[type="tel"]:focus {
   font-style: italic;
 }
 
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 800px;
+  padding: 18px 20px;
+  background-color: #ffffff;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+}
+
+.checkbox-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 0;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.checkbox-option input {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.checkbox-option span {
+  color: #495057;
+  line-height: 1.4;
+}
+
 /* Personal info section */
 .personal-info-section h5 {
   color: #495057;

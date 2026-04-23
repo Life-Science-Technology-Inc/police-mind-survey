@@ -12,6 +12,8 @@ const DEFAULT_RECRUITMENT_GOALS = {
   normal: 25,
 };
 
+const formatPreferredParticipationRounds = (value) => value || '-';
+
 const AdminPage = () => {
   const [participants, setParticipants] = useState([]);
   const [participantFiles, setParticipantFiles] = useState({});
@@ -721,6 +723,7 @@ const AdminPage = () => {
       '이름', 
       '이메일', 
       '전화번호',
+      '희망참여일',
       '주소',
       '성별',
       '생년월일',
@@ -753,6 +756,7 @@ const AdminPage = () => {
         person.email,
         // 전화번호 앞에 작은따옴표 추가하여 텍스트로 인식되도록 처리
         `="${person.phone}"`,
+        formatPreferredParticipationRounds(person.preferred_participation_rounds),
         person.address || '-',
         person.gender || '-',
         person.birth_date || '-',
@@ -979,6 +983,10 @@ const AdminPage = () => {
               <div className="detail-item">
                 <span className="detail-label">전화번호:</span>
                 <span className="detail-value">{selectedParticipant.phone || '-'}</span>
+              </div>
+              <div className="detail-item">
+                <span className="detail-label">희망 참여일:</span>
+                <span className="detail-value">{formatPreferredParticipationRounds(selectedParticipant.preferred_participation_rounds)}</span>
               </div>
               <div className="detail-item">
                 <span className="detail-label">성별:</span>
@@ -1215,6 +1223,7 @@ const AdminPage = () => {
                     <th rowSpan="2">이름</th>
                     <th rowSpan="2">이메일</th>
                     <th rowSpan="2">전화번호</th>
+                    <th rowSpan="2">희망 참여일</th>
                     <th rowSpan="2" onClick={() => handleSort('depressive')}>
                       우울점수{renderSortArrow('depressive')}
                     </th>
@@ -1254,6 +1263,7 @@ const AdminPage = () => {
                           <td>{participant.name || '-'}</td>
                           <td>{participant.email || '-'}</td>
                           <td>{participant.phone || '-'}</td>
+                          <td>{formatPreferredParticipationRounds(participant.preferred_participation_rounds)}</td>
                           <td className={participant.depressive >= 10 ? 'highlight' : ''}>
                             {participant.depressive || 0}
                           </td>

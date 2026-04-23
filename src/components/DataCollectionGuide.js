@@ -5,7 +5,25 @@ import { REGISTRATION_STEPS } from '../config/registrationSteps';
 import { validatePhoneNumber, usePhoneNumber } from '../utils/phoneNumberUtils';
 import { buildSurveySyncPayload, syncScreeningProfile } from '../services/backendSync';
 
+const preferredSessionValueMap = {
+  round1: '1차',
+  round2: '2차',
+  noPreference: '상관없음',
+};
+
+const formatPreferredSessionsForStorage = (preferredSessions = []) =>
+  preferredSessions
+    .map((session) => preferredSessionValueMap[session])
+    .filter(Boolean)
+    .join(', ');
+
 const DataCollectionGuide = () => {
+  const preferredSessionOptions = [
+    { id: 'round1', label: '1차 (5월 11일-)' },
+    { id: 'round2', label: '2차 (5월 26일-)' },
+    { id: 'noPreference', label: '상관없음' },
+  ];
+
   const navigate = useNavigate();
   const location = useLocation();
   
@@ -16,7 +34,8 @@ const DataCollectionGuide = () => {
   const [personalInfo, setPersonalInfo] = useState({
     name: '',
     phoneNumber: '',
-    email: ''
+    email: '',
+    preferredSessions: []
   });
 
   // 개인정보 동의 상태 관리
@@ -100,6 +119,29 @@ const DataCollectionGuide = () => {
     setRegistrationSuccess(false);
   };
 
+  const handlePreferredSessionChange = (optionId) => {
+    setPersonalInfo((prev) => {
+      const currentSelections = prev.preferredSessions || [];
+      let nextSelections;
+
+      if (optionId === 'noPreference') {
+        nextSelections = currentSelections.includes('noPreference') ? [] : ['noPreference'];
+      } else if (currentSelections.includes(optionId)) {
+        nextSelections = currentSelections.filter((item) => item !== optionId);
+      } else {
+        nextSelections = [...currentSelections.filter((item) => item !== 'noPreference'), optionId];
+      }
+
+      return {
+        ...prev,
+        preferredSessions: nextSelections,
+      };
+    });
+
+    setRegistrationError('');
+    setRegistrationSuccess(false);
+  };
+
   // 집단 분류 함수
   const getGroupType = () => {
     if (depressionScore >= 10) {
@@ -137,6 +179,11 @@ const DataCollectionGuide = () => {
       return;
     }
 
+    if (!personalInfo.preferredSessions || personalInfo.preferredSessions.length === 0) {
+      setRegistrationError('희망 참여일을 하나 이상 선택해 주세요.');
+      return;
+    }
+
     // 모든 검증 통과 시 DB에 대기자 정보 저장
     setIsRegistering(true);
     setRegistrationError('');
@@ -166,6 +213,7 @@ const DataCollectionGuide = () => {
         name: personalInfo.name.trim(),
         phone: personalInfo.phoneNumber,
         email: personalInfo.email.trim(),
+        preferred_participation_rounds: formatPreferredSessionsForStorage(personalInfo.preferredSessions),
         depressive: depressionScore,
         anxiety: anxietyScore,
         stress: stressScore,
@@ -235,7 +283,7 @@ const DataCollectionGuide = () => {
       <div className="guide-content">
         <div className="guide-intro">
           <p>
-          한국과학기술연구원 바이오닉스 연구센터에서는 경찰 맞춤형 스트레스 관리 모니터링 시스템을 개발하기 위해 다음과 같이 3주간 생체 신호 및 라이프로그 데이터 수집에 참여할 참여자를 모집합니다. 
+          한국과학기술연구원 바이오닉스 연구센터에서는 경찰 맞춤형 스트레스 관리 모니터링 시스템을 개발하기 위해 다음과 같이 1 주간 생체 신호 및 라이프로그 데이터 수집에 참여할 참여자를 모집합니다.
           </p>
         </div>
 
@@ -256,9 +304,9 @@ const DataCollectionGuide = () => {
             <li>
               실험 기간: <strong>측정 시작 후 개인별 1주일</strong>
               <br />
-              <strong>1차: 26. 5. 11 ~</strong>
+              <strong>1차: 26. 5. 11(월) ~</strong>
               <br />
-              <strong>2차: 26. 5. 26 ~</strong>
+              <strong>2차: 26. 5. 26(화) ~</strong>
             </li>
           </ul>
         </div>
@@ -358,6 +406,22 @@ const DataCollectionGuide = () => {
                   ) : (
                     <small className="helper-text">형식: 010-0000-0000</small>
                   )}
+                </div>
+
+                <div className="form-group">
+                  <label>희망 참여일</label>
+                  <div className="checkbox-group">
+                    {preferredSessionOptions.map((option) => (
+                      <label key={option.id} className="checkbox-option">
+                        <input
+                          type="checkbox"
+                          checked={personalInfo.preferredSessions.includes(option.id)}
+                          onChange={() => handlePreferredSessionChange(option.id)}
+                        />
+                        <span>{option.label}</span>
+                      </label>
+                    ))}
+                  </div>
                 </div>
               </div>
 
