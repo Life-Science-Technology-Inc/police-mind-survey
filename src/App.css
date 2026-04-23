@@ -1856,14 +1856,17 @@ input[type="tel"]:focus {
   margin: 0;
   flex-shrink: 0;
   display: block;
+  align-self: center;
 }
 
 .checkbox-option span {
   display: flex;
   align-items: center;
+  flex: 1;
   color: #495057;
   line-height: 1.3;
   min-height: 18px;
+  word-break: keep-all;
 }
 
 .checkbox-option:hover {

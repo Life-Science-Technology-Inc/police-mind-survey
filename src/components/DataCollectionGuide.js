@@ -16,8 +16,8 @@ const formatPreferredSessionsForStorage = (preferredSession) =>
 
 const DataCollectionGuide = () => {
   const preferredSessionOptions = [
-    { id: 'round1', label: '1차 (5월 11일-)' },
-    { id: 'round2', label: '2차 (5월 26일-)' },
+    { id: 'round1', label: '1차 실험(2026. 5. 11 ~)' },
+    { id: 'round2', label: '2차 실험(2026. 5. 26 ~)' },
     { id: 'noPreference', label: '상관없음' },
   ];
 
