@@ -175,23 +175,17 @@ const DataCollectionGuide = () => {
 
     try {
       // 먼저 모집 상태 확인
-      const { data: recruitmentData, error: recruitmentError } = await supabase
-        .from('recruitment_status')
-        .select('is_recruiting')
-        .order('updated_at', { ascending: false })
-        .limit(1);
+      const { data: isRecruiting, error: recruitmentError } = await supabase
+        .rpc('get_recruitment_status');
 
       if (recruitmentError) {
         console.error('Recruitment status check error:', recruitmentError);
-        setRegistrationError('모집 상태를 확인할 수 없습니다. 잠시 후 다시 시도해 주세요.');
-        return;
-      }
-
-      // 모집이 종료된 경우
-      if (recruitmentData && recruitmentData.length > 0 && !recruitmentData[0].is_recruiting) {
+        // 홈 화면과 동일하게 오류 시 기본적으로 모집 중으로 처리
+      } else if (!isRecruiting) {
         setRegistrationError('현재 충원이 완료된 상태입니다. 결원 발생 시 추가 모집을 진행하겠습니다.');
         return;
       }
+
       // 대기자 정보 구성
       const waitlistData = {
         name: personalInfo.name.trim(),
