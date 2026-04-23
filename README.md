@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Police Mind Survey
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+경찰 마음건강 설문 및 데이터 수집 안내 페이지 프로젝트입니다.  
+GitHub Pages로 배포되며, 현재 공개 주소는 아래와 같습니다.
 
-## Available Scripts
+- 배포 URL: https://life-science-technology-inc.github.io/police-mind-survey/#/
+- 데이터 수집 안내 URL: https://life-science-technology-inc.github.io/police-mind-survey/#/data-collection-guide
 
-In the project directory, you can run:
+## 실행
 
-### `npm start`
+```bash
+npm install
+npm start
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 빌드
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+npm run build
+```
 
-### `npm test`
+## 배포
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm run deploy
+```
 
-### `npm run build`
+`package.json`의 `homepage` 설정을 기준으로 `gh-pages`를 사용해 배포합니다.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 작업 내역
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2026-04-23
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- `src/components/DataCollectionGuide.js`의 모집 개요 문구 수정
+  - 모집 기간: `26. 5. 4 (월)`
+  - 모집 인원: `우울군 30, 스트레스 고위험군 30, 건강인 40`
+  - 실험 기간:
+    - `측정 시작 후 개인별 1주일`
+    - `1차: 26. 5. 11 ~`
+    - `2차: 26. 5. 26 ~`
+- 참여 내용 및 과정 문구 수정
+  - 8번: `알림은 매 정각마다 제공되며, 일 3회 이상 피드백이 요구됩니다.`
+  - 12번: `일 1회 수면 설문, 일 1회 10분 간 챗봇 대화를 실행해 주세요.`

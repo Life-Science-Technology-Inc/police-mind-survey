@@ -251,9 +251,15 @@ const DataCollectionGuide = () => {
         <div className="guide-section">
           <h2>■ 모집 개요</h2>
           <ul>
-            <li>모집 기간: <strong>25.6.30 (월) – 충원시까지</strong></li>
-            <li>모집 인원: <strong>우울군 50명, 스트레스 고위험군 25명, 건강인 25명</strong></li>
-            <li>실험 기간: <strong>25.7.14 – 25.9.28 (워치 측정 시작한 날로부터 3주간)</strong></li>
+            <li>모집 기간: <strong>26. 5. 4 (월)</strong></li>
+            <li>모집 인원: <strong>우울군 30, 스트레스 고위험군 30, 건강인 40</strong></li>
+            <li>
+              실험 기간: <strong>측정 시작 후 개인별 1주일</strong>
+              <br />
+              <strong>1차: 26. 5. 11 ~</strong>
+              <br />
+              <strong>2차: 26. 5. 26 ~</strong>
+            </li>
           </ul>
         </div>
 
@@ -270,11 +276,11 @@ const DataCollectionGuide = () => {
             <li><strong>삼성 헬스 데이터 수집에 동의</strong>하고 연동해 주세요. (운동량 및 수면 정보 취득 목적)</li>
             <li>설치된 앱을 통해 <strong>2시간 마다 자동으로 귀하의 맥파 정보를 취득하여 스트레스 정도를 알려줍니다.</strong> 알림
             을 받으면, <strong>해당 스트레스 정보가 맞는지, 실제 스트레스 정도는 어느 정도인지 피드백</strong>을 주시면 됩니다.</li>
-            <li>알림은 <strong>근무 시간 중심으로 6회</strong> 정도 제공되며, 스트레스에 따라 수동적으로 입력 가능합니다.</li>
+            <li>알림은 <strong>매 정각마다 제공</strong>되며, <strong>일 3회 이상 피드백</strong>이 요구됩니다.</li>
             <li>주간 근무 및 휴일에는 8:00 - 20:00, 야간 근무에는 20:00 - 8:00시 기준으로 알림이 제공됩니다.</li>
             <li>하루 1회(20:00시) <strong>1분간 걷는 상태에서의 데이터 측정</strong> 과정이 있습니다.</li>
             <li>충전 시간 외에는 <strong>상시 워치를 착용</strong>해주십시오.</li>
-            <li>정신 건강 정도를 확인하기 위해 <strong>주 1회 간단한 온라인 설문</strong>을 진행해 주십시오(1분 미만).</li>
+            <li><strong>일 1회 수면 설문</strong>, <strong>일 1회 10분 간 챗봇 대화</strong>를 실행해 주세요.</li>
             <li>실험 완료 후 워치 반납을 위한 방문 수거(택배) 안내를 드립니다.</li>
           </ol>
         </div>
