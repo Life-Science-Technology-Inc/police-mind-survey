@@ -13,6 +13,16 @@ const DEFAULT_RECRUITMENT_GOALS = {
 };
 
 const formatPreferredParticipationRounds = (value) => value || '-';
+const formatSupabaseErrorMessage = (error, fallback = '인증 오류가 발생했습니다.') => {
+  if (!error) return fallback;
+
+  const parts = [error.message, error.details, error.hint]
+    .filter(Boolean)
+    .map((part) => String(part).trim())
+    .filter(Boolean);
+
+  return parts.length > 0 ? parts.join(' / ') : fallback;
+};
 
 const AdminPage = () => {
   const [participants, setParticipants] = useState([]);
@@ -61,7 +71,10 @@ const AdminPage = () => {
       return { success: false, message: 'Authentication failed' };
     } catch (error) {
       console.error('Authentication error:', error);
-      return { success: false, message: 'Authentication error' };
+      return {
+        success: false,
+        message: formatSupabaseErrorMessage(error, 'Authentication error'),
+      };
     }
   };
   
