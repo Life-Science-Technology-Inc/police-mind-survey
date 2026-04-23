@@ -66,3 +66,11 @@ npm run deploy
 - DB 변경 스크립트 추가
   - `db/add_preferred_participation_rounds.sql`
   - `survey-person` 테이블에 `preferred_participation_rounds text` 컬럼 추가용 SQL 작성
+- 희망 참여일 선택 UI 개선
+  - `1차 / 2차 / 상관없음`이 동시에 선택되지 않도록 단일 선택 방식으로 변경
+  - 체크박스형 UI를 카드형 라디오 선택 UI로 정리
+- GitHub Pages 재배포
+  - 희망 참여일 단일 선택 UI 및 스타일 개선 반영
+- 희망 참여일 라디오 정렬 보정
+  - 선택 원형 버튼과 텍스트 사이 간격 조정
+  - 텍스트 세로 중앙 정렬 보정
