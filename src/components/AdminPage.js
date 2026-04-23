@@ -7,9 +7,9 @@ import '../styles/AdminPage.css';
 
 // 기본 충원 목표 (DB에서 로드 실패 시 사용)
 const DEFAULT_RECRUITMENT_GOALS = {
-  depression: 50,
-  stress: 25,
-  normal: 25,
+  depression: 30,
+  stress: 30,
+  normal: 40,
 };
 
 const formatPreferredParticipationRounds = (value) => value || '-';
@@ -1236,7 +1236,6 @@ const AdminPage = () => {
                     <th rowSpan="2">이름</th>
                     <th rowSpan="2">이메일</th>
                     <th rowSpan="2">전화번호</th>
-                    <th rowSpan="2">희망 참여일</th>
                     <th rowSpan="2" onClick={() => handleSort('depressive')}>
                       우울점수{renderSortArrow('depressive')}
                     </th>
@@ -1246,6 +1245,7 @@ const AdminPage = () => {
                     <th rowSpan="2" onClick={() => handleSort('stress')}>
                       스트레스점수{renderSortArrow('stress')}
                     </th>
+                    <th rowSpan="2">희망 참여일</th>
                     <th rowSpan="2" onClick={() => handleSort('created_at')}>
                       등록일{renderSortArrow('created_at')}
                     </th>
@@ -1276,7 +1276,6 @@ const AdminPage = () => {
                           <td>{participant.name || '-'}</td>
                           <td>{participant.email || '-'}</td>
                           <td>{participant.phone || '-'}</td>
-                          <td>{formatPreferredParticipationRounds(participant.preferred_participation_rounds)}</td>
                           <td className={participant.depressive >= 10 ? 'highlight' : ''}>
                             {participant.depressive || 0}
                           </td>
@@ -1286,6 +1285,7 @@ const AdminPage = () => {
                           <td className={participant.stress !== null && participant.stress >= 17 ? 'highlight' : ''}>
                             {participant.stress !== null ? participant.stress : '-'}
                           </td>
+                          <td>{formatPreferredParticipationRounds(participant.preferred_participation_rounds)}</td>
                           <td>{formatDate(participant.created_at)}</td>
                           <td className={`registration-step-${participant.confirmation_status === 'rejected' ? 'rejected' : (participant.registration_step || 0)}`}>
                             {formatRegistrationStep(participant.registration_step, participant.confirmation_status)}
