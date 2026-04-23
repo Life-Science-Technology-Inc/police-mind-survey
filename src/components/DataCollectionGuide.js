@@ -11,11 +11,8 @@ const preferredSessionValueMap = {
   noPreference: '상관없음',
 };
 
-const formatPreferredSessionsForStorage = (preferredSessions = []) =>
-  preferredSessions
-    .map((session) => preferredSessionValueMap[session])
-    .filter(Boolean)
-    .join(', ');
+const formatPreferredSessionsForStorage = (preferredSession) =>
+  preferredSessionValueMap[preferredSession] || '';
 
 const DataCollectionGuide = () => {
   const preferredSessionOptions = [
@@ -35,7 +32,7 @@ const DataCollectionGuide = () => {
     name: '',
     phoneNumber: '',
     email: '',
-    preferredSessions: []
+    preferredSession: ''
   });
 
   // 개인정보 동의 상태 관리
@@ -120,23 +117,10 @@ const DataCollectionGuide = () => {
   };
 
   const handlePreferredSessionChange = (optionId) => {
-    setPersonalInfo((prev) => {
-      const currentSelections = prev.preferredSessions || [];
-      let nextSelections;
-
-      if (optionId === 'noPreference') {
-        nextSelections = currentSelections.includes('noPreference') ? [] : ['noPreference'];
-      } else if (currentSelections.includes(optionId)) {
-        nextSelections = currentSelections.filter((item) => item !== optionId);
-      } else {
-        nextSelections = [...currentSelections.filter((item) => item !== 'noPreference'), optionId];
-      }
-
-      return {
-        ...prev,
-        preferredSessions: nextSelections,
-      };
-    });
+    setPersonalInfo((prev) => ({
+      ...prev,
+      preferredSession: optionId,
+    }));
 
     setRegistrationError('');
     setRegistrationSuccess(false);
@@ -179,8 +163,8 @@ const DataCollectionGuide = () => {
       return;
     }
 
-    if (!personalInfo.preferredSessions || personalInfo.preferredSessions.length === 0) {
-      setRegistrationError('희망 참여일을 하나 이상 선택해 주세요.');
+    if (!personalInfo.preferredSession) {
+      setRegistrationError('희망 참여일을 선택해 주세요.');
       return;
     }
 
@@ -213,7 +197,7 @@ const DataCollectionGuide = () => {
         name: personalInfo.name.trim(),
         phone: personalInfo.phoneNumber,
         email: personalInfo.email.trim(),
-        preferred_participation_rounds: formatPreferredSessionsForStorage(personalInfo.preferredSessions),
+        preferred_participation_rounds: formatPreferredSessionsForStorage(personalInfo.preferredSession),
         depressive: depressionScore,
         anxiety: anxietyScore,
         stress: stressScore,
@@ -410,12 +394,16 @@ const DataCollectionGuide = () => {
 
                 <div className="form-group">
                   <label>희망 참여일</label>
-                  <div className="checkbox-group">
+                  <div className="checkbox-group" role="radiogroup" aria-label="희망 참여일">
                     {preferredSessionOptions.map((option) => (
-                      <label key={option.id} className="checkbox-option">
+                      <label
+                        key={option.id}
+                        className={`checkbox-option ${personalInfo.preferredSession === option.id ? 'selected' : ''}`}
+                      >
                         <input
-                          type="checkbox"
-                          checked={personalInfo.preferredSessions.includes(option.id)}
+                          type="radio"
+                          name="preferredSession"
+                          checked={personalInfo.preferredSession === option.id}
                           onChange={() => handlePreferredSessionChange(option.id)}
                         />
                         <span>{option.label}</span>

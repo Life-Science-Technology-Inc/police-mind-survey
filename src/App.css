@@ -1830,20 +1830,24 @@ input[type="tel"]:focus {
   flex-direction: column;
   gap: 12px;
   max-width: 800px;
-  padding: 18px 20px;
-  background-color: #ffffff;
-  border: 1px solid #ced4da;
-  border-radius: 6px;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
 }
 
 .checkbox-option {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   margin-bottom: 0;
   cursor: pointer;
   font-size: 15px;
   font-weight: 500;
+  padding: 16px 18px;
+  background-color: #ffffff;
+  border: 1px solid #d9dee3;
+  border-radius: 10px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
 .checkbox-option input {
@@ -1856,6 +1860,17 @@ input[type="tel"]:focus {
 .checkbox-option span {
   color: #495057;
   line-height: 1.4;
+}
+
+.checkbox-option:hover {
+  border-color: #b8c4d3;
+  background-color: #fbfcff;
+}
+
+.checkbox-option.selected {
+  border-color: #4c6ef5;
+  background-color: #f3f6ff;
+  box-shadow: 0 0 0 3px rgba(76, 110, 245, 0.1);
 }
 
 /* Personal info section */
