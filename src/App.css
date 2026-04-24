@@ -815,7 +815,7 @@ input[type="tel"]:focus {
 .home-footer-note {
   width: 100%;
   max-width: 820px;
-  margin-top: 28px;
+  margin-top: 56px;
   text-align: center;
 }
 
@@ -879,6 +879,10 @@ input[type="tel"]:focus {
 
   .home-footer-note p {
     font-size: 14px;
+  }
+
+  .home-footer-note {
+    margin-top: 40px;
   }
 }
 
