@@ -1245,7 +1245,9 @@ const AdminPage = () => {
                     <th rowSpan="2" onClick={() => handleSort('stress')}>
                       스트레스점수{renderSortArrow('stress')}
                     </th>
-                    <th rowSpan="2">희망 참여일</th>
+                    <th rowSpan="2" onClick={() => handleSort('preferred_participation_rounds')}>
+                      희망 참여일{renderSortArrow('preferred_participation_rounds')}
+                    </th>
                     <th rowSpan="2" onClick={() => handleSort('created_at')}>
                       등록일{renderSortArrow('created_at')}
                     </th>
