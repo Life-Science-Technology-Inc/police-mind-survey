@@ -679,6 +679,34 @@ const FieldStudyGuide = () => {
                   </div>
                 </div>
 
+                <div className="guide-subsection">
+                  <h3>9. 스크롤 아래로 내리기</h3>
+                  <div style={{ textAlign: 'center', margin: '20px 0' }}>
+                    <img 
+                      src={getImageUrl('field-study-guide/07-monitoring-usage/basic-settings/new_page9.png')} 
+                      alt="스크롤 아래로 내리기" 
+                      style={{
+                        ...squareImageStyle,
+                        width: window.innerWidth > 768 ? '250px' : '70%'
+                      }}
+                    />
+                  </div>
+                </div>
+
+                <div className="guide-subsection">
+                  <h3>10. [알림 및 리마인더 설정허용]을 한번 끄고 다시 켜기(이미 허용상태처럼 보여도 이과정은 필수)</h3>
+                  <div style={{ textAlign: 'center', margin: '20px 0' }}>
+                    <img 
+                      src={getImageUrl('field-study-guide/07-monitoring-usage/basic-settings/new_page10.png')} 
+                      alt="알림 및 리마인더 설정허용을 한번 끄고 다시 켜기" 
+                      style={{
+                        ...squareImageStyle,
+                        width: window.innerWidth > 768 ? '250px' : '70%'
+                      }}
+                    />
+                  </div>
+                </div>
+
                 <div className="guide-subsection" style={{ marginTop: '40px', borderTop: '2px solid #e9ecef', paddingTop: '30px' }}>
                   <h2 style={{ color: '#333', marginBottom: '20px' }}>측정을 잘못 선택했거나 다시 진행하고 싶은 경우</h2>
                   
