@@ -668,46 +668,11 @@ input[type="tel"]:focus {
   margin: 0 auto;
 }
 
-/* Logo Section Styles */
-.logo-section {
-  text-align: right;
-  margin-bottom: 40px;
-  padding-top: 20px;
-}
-
-.logo-container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.logo {
-  max-height: 80px;
-  width: auto;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
-}
-
-.logo:hover {
-  transform: scale(1.05);
-}
-
-.police-logo {
-  max-height: 40px;
-}
-
-.kist-logo {
-  max-height: 40px;
-}
-
 .home-header h1 {
   color: #495057;
   font-size: 20px;
   margin-bottom: 40px;
-  margin-top: 100px;
+  margin-top: 32px;
   font-weight: 600;
 }
 
@@ -732,6 +697,8 @@ input[type="tel"]:focus {
 
 .description {
   margin-bottom: 40px;
+  width: 100%;
+  max-width: 820px;
 }
 
 .description-box {
@@ -741,6 +708,7 @@ input[type="tel"]:focus {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   margin: 20px 0;
   border: 1px solid #e9ecef;
+  width: 100%;
 }
 
 .description-text {
@@ -782,6 +750,8 @@ input[type="tel"]:focus {
   gap: 40px;
   justify-content: center;
   flex-wrap: wrap;
+  width: 100%;
+  max-width: 820px;
 }
 
 .action-card {
@@ -789,7 +759,9 @@ input[type="tel"]:focus {
   border: 1px solid #e9ecef;
   border-radius: 15px;
   padding: 40px 30px;
+  flex: 1 1 0;
   min-width: 220px;
+  max-width: 246px;
   min-height: 120px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -851,31 +823,7 @@ input[type="tel"]:focus {
   .home-container {
     padding: 30px 15px;
   }
-  
-  .logo-section {
-    margin-bottom: 30px;
-    padding-top: 10px;
-    text-align: center;
-  }
-  
-  .logo-container {
-    gap: 20px;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .logo {
-    max-height: 50px;
-  }
-  
-  .police-logo {
-    max-height: 50px;
-  }
-  
-  .kist-logo {
-    max-height: 40px;
-  }
-  
+
   .home-title h2 {
     font-size: 20px;
   }
@@ -903,7 +851,9 @@ input[type="tel"]:focus {
   }
   
   .action-card {
+    width: 100%;
     min-width: 200px;
+    max-width: none;
     padding: 30px 20px;
   }
   
