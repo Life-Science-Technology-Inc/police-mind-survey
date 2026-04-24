@@ -668,17 +668,37 @@ input[type="tel"]:focus {
   margin: 0 auto;
 }
 
+.home-org-block {
+  width: 100%;
+  max-width: 820px;
+  margin: 0 auto 28px;
+  text-align: right;
+}
+
+.home-org-block p {
+  margin: 0 0 6px;
+  color: #6c757d;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.home-org-block p:last-child {
+  margin-bottom: 0;
+}
+
 .home-header h1 {
   color: #495057;
-  font-size: 20px;
-  margin-bottom: 40px;
-  margin-top: 32px;
-  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 16px;
+  margin-top: 0;
+  font-weight: 700;
+  line-height: 1.4;
 }
 
 .home-title h2 {
   color: #343a40;
-  font-size: 24px;
+  font-size: 26px;
   margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.4;
@@ -824,8 +844,20 @@ input[type="tel"]:focus {
     padding: 30px 15px;
   }
 
+  .home-org-block {
+    margin-bottom: 24px;
+  }
+
+  .home-org-block p {
+    font-size: 14px;
+  }
+
   .home-title h2 {
     font-size: 20px;
+  }
+
+  .home-header h1 {
+    font-size: 22px;
   }
   
   .home-content {
