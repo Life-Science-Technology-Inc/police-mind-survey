@@ -78,7 +78,7 @@ const FieldStudyGuide = () => {
     { value: 'app-install', label: '갤럭시 워치 KIST 어플 설치하는 법' },
     { value: 'web-registration', label: '실증 실험 모니터링 시스템 회원가입 및 근무일정 설명' },
     { value: 'monitoring-usage', label: 'KIST 건강 모니터링 어플 사용법' },
-    { value: 'voice-recording', label: '하루 연상 단어 음성으로 녹음하기' },
+    { value: 'voice-recording', label: '퇴근 후 약 10분간 챗봇과 대화' },
     { value: 'samsung-health-download', label: '삼성 헬스 데이터 다운로드 및 전송 방법' },
   ];
 
@@ -1451,187 +1451,136 @@ const FieldStudyGuide = () => {
           </>
         )}
 
-        {/* 하루 연상 단어 음성으로 녹음하기 탭 */}
+        {/* 퇴근 후 약 10분간 챗봇과 대화 탭 */}
         {activeMainTab === 'voice-recording' && (
           <div className="guide-section">
-            <h2>■ 하루 연상 단어 음성으로 녹음하기</h2>
-            
-            <div className="guide-subsection">
-              <h3>📝 연상단어 녹음 안내</h3>
-              <ul style={{ fontSize: '16px', lineHeight: '1.8', color: '#333' }}>
-                <li>퇴근 후 오늘 떠오르는 단어 5개 음성과 기분 녹음</li>
-                <li>소음 없는 곳에서 진행</li>
-                <li>시작 시 “녹음 시작” 이라고 말한 뒤 녹음 진행</li>
-                <li>예) 
-                  <ul style={{ marginTop: '8px', fontSize: '15px' }}>
-                    <li><span style={{ color: 'red', fontWeight: 'bold' }}>"녹음 시작"</span>, 짜증, 바쁨, 친구, 대형사고, 지하철 + 오늘 기분은 00하다</li>
-                    <li><span style={{ color: 'red', fontWeight: 'bold' }}>"녹음 시작"</span>, 빙수, 달리기, 신기록, 즐거움, 피곤 + 오늘 기분은 00하다</li>
-                  </ul>
-                </li>
-                <li>파일 이름은 이름 + 날짜 형식으로 저장 예) 김경찰0710</li>
-
-              </ul>
-            </div>
+            <h2>■ 퇴근 후 약 10분간 챗봇과 대화</h2>
 
             <div className="guide-subsection">
-              <h3>1. 음성 녹음앱 클릭</h3>
-              <div style={{ 
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                flexDirection: window.innerWidth <= 768 ? 'column' : 'row',
-                gap: window.innerWidth <= 768 ? '20px' : '40px',
-                margin: '30px 0'
-              }}>
-                <div style={{ textAlign: 'center', flex: '1', maxWidth: '100%' }}>
-                  <img 
-                    src={getImageUrl('field-study-guide/08-voice-recording/record1-1.png')}
-                    alt="음성 녹음앱 클릭" 
-                    style={{
-                      maxWidth: '100%',
-                      width: window.innerWidth > 768 ? '250px' : '90%',
-                      height: 'auto',
-                      borderRadius: '8px'
-                    }}
-                  />
-                </div>
-              </div>
-            </div>
-            
-            <div className="guide-subsection">
-              <h3>2. 연상 단어 5개 녹음하기</h3>
-              <div style={{ 
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                flexDirection: window.innerWidth <= 768 ? 'column' : 'row',
-                gap: window.innerWidth <= 768 ? '20px' : '40px',
-                margin: '30px 0'
-              }}>
-                <div style={{ textAlign: 'center', flex: '1', maxWidth: '100%' }}>
-                  <img 
-                    src={getImageUrl('field-study-guide/08-voice-recording/record1-2.png')}
-                    alt="연상 단어 5개 녹음하기" 
-                    style={{
-                      maxWidth: '100%',
-                      width: window.innerWidth > 768 ? '250px' : '90%',
-                      height: 'auto',
-                      borderRadius: '8px'
-                    }}
-                  />
-                </div>
+              <h3>1. 전화번호 입력</h3>
+              <div style={{ textAlign: 'center', margin: '30px 0' }}>
+                <img
+                  src={getImageUrl('field-study-guide/08-chatbot/new_page1.png')}
+                  alt="전화번호 입력"
+                  style={{
+                    maxWidth: '100%',
+                    width: window.innerWidth > 768 ? '320px' : '90%',
+                    height: 'auto',
+                    borderRadius: '8px'
+                  }}
+                />
               </div>
             </div>
 
             <div className="guide-subsection">
-              <h3>3. 녹음 후 저장 예) 김경찰0710</h3>
-              <div style={{ 
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                flexDirection: window.innerWidth <= 768 ? 'column' : 'row',
-                gap: window.innerWidth <= 768 ? '20px' : '40px',
-                margin: '30px 0'
-              }}>
-                <div style={{ textAlign: 'center', flex: '1', maxWidth: '100%' }}>
-                  <img 
-                    src={getImageUrl('field-study-guide/08-voice-recording/record2-1.png')}
-                    alt="3. 녹음 후 저장 예) 김경찰0710" 
-                    style={{
-                      maxWidth: '100%',
-                      width: window.innerWidth > 768 ? '250px' : '90%',
-                      height: 'auto',
-                      borderRadius: '8px'
-                    }}
-                  />
-                </div>
+              <h3>2. ① 현재 스트레스 정도 → ② 정서 상태 체크 → ③ [대화 시작] 클릭</h3>
+              <div style={{ textAlign: 'center', margin: '30px 0' }}>
+                <img
+                  src={getImageUrl('field-study-guide/08-chatbot/new_page2.png')}
+                  alt="현재 스트레스 정도와 정서 상태 체크 후 대화 시작"
+                  style={{
+                    maxWidth: '100%',
+                    width: window.innerWidth > 768 ? '320px' : '90%',
+                    height: 'auto',
+                    borderRadius: '8px'
+                  }}
+                />
               </div>
             </div>
 
             <div className="guide-subsection">
-              <h3>4. 파일 꾹 눌러 선택</h3>
-              <div style={{ 
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                flexDirection: window.innerWidth <= 768 ? 'column' : 'row',
-                gap: window.innerWidth <= 768 ? '20px' : '40px',
-                margin: '30px 0'
-              }}>
-                <div style={{ textAlign: 'center', flex: '1', maxWidth: '100%' }}>
-                  <img 
-                    src={getImageUrl('field-study-guide/08-voice-recording/record2-2.png')}
-                    alt="4. 파일 꾹 눌러 선택" 
-                    style={{
-                      maxWidth: '100%',
-                      width: window.innerWidth > 768 ? '250px' : '90%',
-                      height: 'auto',
-                      borderRadius: '8px'
-                    }}
-                  />
-                </div>
+              <h3>3. 부서, 계급, 근무형태 입력</h3>
+              <div style={{ textAlign: 'center', margin: '30px 0' }}>
+                <img
+                  src={getImageUrl('field-study-guide/08-chatbot/new_page3.png')}
+                  alt="부서 계급 근무형태 입력"
+                  style={{
+                    maxWidth: '100%',
+                    width: window.innerWidth > 768 ? '320px' : '90%',
+                    height: 'auto',
+                    borderRadius: '8px'
+                  }}
+                />
               </div>
             </div>
 
             <div className="guide-subsection">
-              <h3>5. 카카오톡 아이콘 클릭</h3>
-              <div style={{ 
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                flexDirection: window.innerWidth <= 768 ? 'column' : 'row',
-                gap: window.innerWidth <= 768 ? '20px' : '40px',
-                margin: '30px 0'
-              }}>
-                <div style={{ textAlign: 'center', flex: '1', maxWidth: '100%' }}>
-                  <img 
-                    src={getImageUrl('field-study-guide/08-voice-recording/record2-3.png')}
-                    alt="5. 카카오톡 아이콘 클릭" 
-                    style={{
-                      maxWidth: '100%',
-                      width: window.innerWidth > 768 ? '250px' : '90%',
-                      height: 'auto',
-                      borderRadius: '8px'
-                    }}
-                  />
-                </div>
+              <h3>4. [대화 시작] 클릭(※ 준비 중일 경우 1~2분 소요될 수 있음)</h3>
+              <div style={{ textAlign: 'center', margin: '30px 0' }}>
+                <img
+                  src={getImageUrl('field-study-guide/08-chatbot/new_page4.png')}
+                  alt="대화 시작 클릭"
+                  style={{
+                    maxWidth: '100%',
+                    width: window.innerWidth > 768 ? '320px' : '90%',
+                    height: 'auto',
+                    borderRadius: '8px'
+                  }}
+                />
               </div>
             </div>
 
             <div className="guide-subsection">
-              <h3>6. 해당 연구원 1:1 카톡방에 파일 전송</h3>
-              <div style={{ 
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                flexDirection: window.innerWidth <= 768 ? 'column' : 'row',
-                gap: window.innerWidth <= 768 ? '10px' : '15px',
-                margin: '15px 0'
-              }}>
-                <div style={{ textAlign: 'center' }}>
-                  <img 
-                    src={getImageUrl('field-study-guide/08-voice-recording/record2-4.png')}
-                    alt="6. 해당 연구원 1:1 카톡방에 파일 전송-1" 
-                    style={{
-                      maxWidth: '100%',
-                      width: window.innerWidth > 768 ? '200px' : '70%',
-                      height: 'auto',
-                      borderRadius: '8px'
-                    }}
-                  />
-                </div>
-                <div style={{ textAlign: 'center' }}>
-                  <img 
-                    src={getImageUrl('field-study-guide/08-voice-recording/record2-5.png')}
-                    alt="6. 해당 연구원 1:1 카톡방에 파일 전송-2" 
-                    style={{
-                      maxWidth: '100%',
-                      width: window.innerWidth > 768 ? '200px' : '70%',
-                      height: 'auto',
-                      borderRadius: '8px'
-                    }}
-                  />
-                </div>
+              <h3>5. 생체신호 참고 [동의] 혹은 [거절] 클릭(※ 더 정확한 대화를 위해 [동의] 권장)</h3>
+              <div style={{ textAlign: 'center', margin: '30px 0' }}>
+                <img
+                  src={getImageUrl('field-study-guide/08-chatbot/new_page5.png')}
+                  alt="생체신호 참고 동의 또는 거절"
+                  style={{
+                    maxWidth: '100%',
+                    width: window.innerWidth > 768 ? '320px' : '90%',
+                    height: 'auto',
+                    borderRadius: '8px'
+                  }}
+                />
+              </div>
+            </div>
+
+            <div className="guide-subsection">
+              <h3>6. 약 10분 미만 챗봇과 대화 후 [대화 종료] 클릭</h3>
+              <div style={{ textAlign: 'center', margin: '30px 0' }}>
+                <img
+                  src={getImageUrl('field-study-guide/08-chatbot/new_page6.png')}
+                  alt="챗봇과 대화 후 대화 종료 클릭"
+                  style={{
+                    maxWidth: '100%',
+                    width: window.innerWidth > 768 ? '320px' : '90%',
+                    height: 'auto',
+                    borderRadius: '8px'
+                  }}
+                />
+              </div>
+            </div>
+
+            <div className="guide-subsection">
+              <h3>7. ① 현재 스트레스 정도 → ② 정서 상태 체크 → ③ [다음] 클릭</h3>
+              <div style={{ textAlign: 'center', margin: '30px 0' }}>
+                <img
+                  src={getImageUrl('field-study-guide/08-chatbot/new_page7.png')}
+                  alt="현재 스트레스 정도와 정서 상태 체크 후 다음 클릭"
+                  style={{
+                    maxWidth: '100%',
+                    width: window.innerWidth > 768 ? '320px' : '90%',
+                    height: 'auto',
+                    borderRadius: '8px'
+                  }}
+                />
+              </div>
+            </div>
+
+            <div className="guide-subsection">
+              <h3>8. AI 분석 결과 확인 후 1~5로 평가 → [제출하고 대화 종료] 클릭</h3>
+              <div style={{ textAlign: 'center', margin: '30px 0' }}>
+                <img
+                  src={getImageUrl('field-study-guide/08-chatbot/new_page8.png')}
+                  alt="AI 분석 결과 확인 후 제출하고 대화 종료 클릭"
+                  style={{
+                    maxWidth: '100%',
+                    width: window.innerWidth > 768 ? '320px' : '90%',
+                    height: 'auto',
+                    borderRadius: '8px'
+                  }}
+                />
               </div>
             </div>
           </div>
