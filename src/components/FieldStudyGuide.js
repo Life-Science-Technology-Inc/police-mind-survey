@@ -226,7 +226,7 @@ const FieldStudyGuide = () => {
               margin: '20px 0'
             }}>
               <img 
-                src={getImageUrl('ready.png')}
+                src={getImageUrl('field-study-guide/01-experiment-preparation/ready.png')}
                 alt="실험 준비 방법 순서도" 
                 style={{
                   maxWidth: '100%',
@@ -266,7 +266,7 @@ const FieldStudyGuide = () => {
                 margin: '20px 0'
               }}>
                 <img 
-                  src={getImageUrl('metahealth_web/metahealth_web-6.png')}
+                  src={getImageUrl('field-study-guide/06-web-registration/metahealth_web-6.png')}
                   alt="KIST 통합관제시스템 로그인 페이지" 
                   style={{
                     maxWidth: '100%',
@@ -289,7 +289,7 @@ const FieldStudyGuide = () => {
                 margin: '20px 0'
               }}>
                 <img 
-                  src={getImageUrl('metahealth_web_modify/metahealth_web_modify.png-1.png')} 
+                  src={getImageUrl('field-study-guide/06-web-registration/metahealth_web_modify.png-1.png')} 
                   alt="간편 회원가입 페이지" 
                   style={{
                     maxWidth: '100%',
@@ -311,7 +311,7 @@ const FieldStudyGuide = () => {
                 margin: '20px 0'
               }}>
                 <img 
-                  src={getImageUrl('metahealth_web_modify/metahealth_web_modify.png-2.png')}
+                  src={getImageUrl('field-study-guide/06-web-registration/metahealth_web_modify.png-2.png')}
                   alt="로그인 후 메인 페이지에서 메뉴 클릭" 
                   style={{
                     maxWidth: '100%',
@@ -328,7 +328,7 @@ const FieldStudyGuide = () => {
               <h3>4. 근무 일정에 따라 근무 타입 수정</h3>
               <div style={{ textAlign: 'center', margin: '20px 0' }}>
                 <img 
-                  src={getImageUrl('metahealth_web_modify/metahealth_web_modify.png-3.png')} 
+                  src={getImageUrl('field-study-guide/06-web-registration/metahealth_web_modify.png-3.png')} 
                   alt="근무일정 메뉴 선택" 
                   style={{
                     maxWidth: '100%',
@@ -337,7 +337,7 @@ const FieldStudyGuide = () => {
                   }}
                 />
                 <img 
-                  src={getImageUrl('metahealth_web_modify/metahealth_web_modify.png-4.png')} 
+                  src={getImageUrl('field-study-guide/06-web-registration/metahealth_web_modify.png-4.png')} 
                   alt="근무일정 메뉴 선택" 
                   style={{
                     maxWidth: '100%',
@@ -352,7 +352,7 @@ const FieldStudyGuide = () => {
               <h3>5. Shift updated successfully!가 나오면 성공!</h3>
               <div style={{ textAlign: 'center', margin: '20px 0' }}>
                 <img 
-                  src={getImageUrl('metahealth_web_modify/metahealth_web_modify.png-5.png')} 
+                  src={getImageUrl('field-study-guide/06-web-registration/metahealth_web_modify.png-5.png')} 
                   alt="근무일정 입력 페이지" 
                   style={{
                     maxWidth: '100%',
@@ -374,7 +374,7 @@ const FieldStudyGuide = () => {
               <h3>1. Play 스토어 클릭</h3>
               <div style={{ textAlign: 'center', margin: '20px 0' }}>
                 <img 
-                  src={getImageUrl('playstore_app_download/playstore_app_download-1.png')} 
+                  src={getImageUrl('field-study-guide/05-app-install/playstore_app_download-1.png')} 
                   alt="갤럭시 워치 앱 메뉴에서 Play 스토어 찾기" 
                   style={{
                     ...squareImageStyle,
@@ -388,7 +388,7 @@ const FieldStudyGuide = () => {
               <h3>2. 돋보기(검색) 클릭</h3>
               <div style={{ textAlign: 'center', margin: '20px 0' }}>
                 <img 
-                  src={getImageUrl('playstore_app_download/playstore_app_download-2.png')} 
+                  src={getImageUrl('field-study-guide/05-app-install/playstore_app_download-2.png')} 
                   alt="Play 스토어에서 검색 버튼 클릭" 
                   style={{
                     ...squareImageStyle,
@@ -402,7 +402,7 @@ const FieldStudyGuide = () => {
               <h3>3. KIST 검색</h3>
               <div style={{ textAlign: 'center', margin: '20px 0' }}>
                 <img 
-                  src={getImageUrl('playstore_app_download/playstore_app_download-3.png')} 
+                  src={getImageUrl('field-study-guide/05-app-install/playstore_app_download-3.png')} 
                   alt="검색창에 KIST 입력" 
                   style={{
                     ...squareImageStyle,
@@ -416,7 +416,7 @@ const FieldStudyGuide = () => {
               <h3>4. 설치 클릭</h3>
               <div style={{ textAlign: 'center', margin: '20px 0' }}>
                 <img 
-                  src={getImageUrl('playstore_app_download/playstore_app_download-4.png')} 
+                  src={getImageUrl('field-study-guide/05-app-install/playstore_app_download-4.png')} 
                   alt="KIST 건강 모니터링 앱 설치" 
                   style={{
                     ...squareImageStyle,
@@ -446,7 +446,7 @@ const FieldStudyGuide = () => {
               }}>
                 <div style={{ textAlign: 'center' }}>
                   <img 
-                    src={getImageUrl('playstore_app_download/playstore_app_download-5.png')} 
+                    src={getImageUrl('field-study-guide/05-app-install/playstore_app_download-5.png')} 
                     alt="어플 목록 하단 KIST 아이콘 생성" 
                     style={{
                       ...squareImageStyle,
@@ -459,7 +459,7 @@ const FieldStudyGuide = () => {
                 </div>
                 <div style={{ textAlign: 'center' }}>
                   <img 
-                    src={getImageUrl('playstore_app_download/playstore_app_download-6.png')} 
+                    src={getImageUrl('field-study-guide/05-app-install/playstore_app_download-6.png')} 
                     alt="KIST 아이콘 길게 클릭" 
                     style={{
                       ...squareImageStyle,
@@ -472,7 +472,7 @@ const FieldStudyGuide = () => {
                 </div>
                 <div style={{ textAlign: 'center' }}>
                   <img 
-                    src={getImageUrl('playstore_app_download/playstore_app_download-7.png')} 
+                    src={getImageUrl('field-study-guide/05-app-install/playstore_app_download-7.png')} 
                     alt="상단으로 끌어 올리기" 
                     style={{
                       ...squareImageStyle,
@@ -499,7 +499,7 @@ const FieldStudyGuide = () => {
                   <h3>1. 허용 클릭</h3>
                   <div style={{ textAlign: 'center', margin: '20px 0' }}>
                     <img 
-                      src={getImageUrl('galaxy_monitoring_basic_set/galaxy_monitoring_basic_4.png')} 
+                      src={getImageUrl('field-study-guide/07-monitoring-usage/basic-settings/galaxy_monitoring_basic_4.png')} 
                       alt="허용 클릭" 
                       style={{
                         ...squareImageStyle,
@@ -513,7 +513,7 @@ const FieldStudyGuide = () => {
                   <h3>2. 앱을 사용 중일 때 클릭</h3>
                   <div style={{ textAlign: 'center', margin: '20px 0' }}>
                     <img 
-                      src={getImageUrl('galaxy_monitoring_basic_set/galaxy_monitoring_basic_1.png')} 
+                      src={getImageUrl('field-study-guide/07-monitoring-usage/basic-settings/galaxy_monitoring_basic_1.png')} 
                       alt="앱을 사용 중일 때만" 
                       style={{
                         ...squareImageStyle,
@@ -527,7 +527,7 @@ const FieldStudyGuide = () => {
                   <h3>3. 항상 클릭</h3>
                   <div style={{ textAlign: 'center', margin: '20px 0' }}>
                     <img 
-                      src={getImageUrl('galaxy_monitoring_basic_set/galaxy_monitoring_basic_2.png')} 
+                      src={getImageUrl('field-study-guide/07-monitoring-usage/basic-settings/galaxy_monitoring_basic_2.png')} 
                       alt="항상 클릭" 
                       style={{
                         ...squareImageStyle,
@@ -541,7 +541,7 @@ const FieldStudyGuide = () => {
                   <h3>4. 뒤로가기 버튼 클릭 → 메인 화면으로 이동</h3>
                   <div style={{ textAlign: 'center', margin: '20px 0' }}>
                     <img 
-                      src={getImageUrl('galaxy_monitoring_basic_set/galaxy_monitoring_basic_3.png')} 
+                      src={getImageUrl('field-study-guide/07-monitoring-usage/basic-settings/galaxy_monitoring_basic_3.png')} 
                       alt="터코가기 버튼 클릭 → 메인 화면으로 이동" 
                       style={{
                         ...squareImageStyle,
@@ -555,7 +555,7 @@ const FieldStudyGuide = () => {
                   <h3>5. 전화번호 클릭</h3>
                   <div style={{ textAlign: 'center', margin: '20px 0' }}>
                     <img 
-                        src={getImageUrl('galaxy_monitoring_basic_set/galaxy_monitoring_basic_set-2.png')} 
+                        src={getImageUrl('field-study-guide/07-monitoring-usage/basic-settings/galaxy_monitoring_basic_set-2.png')} 
                         alt="전화 번호 입력 화면"                       
                       style={{
                         ...squareImageStyle,
@@ -569,7 +569,7 @@ const FieldStudyGuide = () => {
                   <h3>6. 전화번호 입력 후 저장하기 클릭</h3>
                   <div style={{ textAlign: 'center', margin: '20px 0' }}>
                     <img 
-                      src={getImageUrl('galaxy_monitoring_basic_set/galaxy_monitoring_basic_set-3.png')} 
+                      src={getImageUrl('field-study-guide/07-monitoring-usage/basic-settings/galaxy_monitoring_basic_set-3.png')} 
                       alt="오토측정시작 버튼 클릭" 
                       style={{
                         ...squareImageStyle,
@@ -601,7 +601,7 @@ const FieldStudyGuide = () => {
                   <h3>7. 연두색 아이콘이 되면 성공!</h3>
                   <div style={{ textAlign: 'center', margin: '20px 0' }}>
                     <img 
-                      src={getImageUrl('galaxy_monitoring_basic_set/modify3.png')} 
+                      src={getImageUrl('field-study-guide/07-monitoring-usage/basic-settings/modify3.png')} 
                       alt="오토측정시작 버튼 클릭" 
                       style={{
                         ...squareImageStyle,
@@ -615,7 +615,7 @@ const FieldStudyGuide = () => {
                   <h3>8. 빨간색 아이콘이 되면 성공!</h3>
                   <div style={{ textAlign: 'center', margin: '20px 0' }}>
                     <img 
-                      src={getImageUrl('galaxy_monitoring_basic_set/galaxy_monitoring_basic_set-6.png')} 
+                      src={getImageUrl('field-study-guide/07-monitoring-usage/basic-settings/galaxy_monitoring_basic_set-6.png')} 
                       alt="빨간색 아이콘으로 변경 성공" 
                       style={{
                         ...squareImageStyle,
@@ -632,7 +632,7 @@ const FieldStudyGuide = () => {
                     marginTop: '20px'
                   }}>
                     <img 
-                      src={getImageUrl('galaxy_monitoring_basic_set/red_icon.png')} 
+                      src={getImageUrl('field-study-guide/07-monitoring-usage/basic-settings/red_icon.png')} 
                       alt="빨간색 원형 아이콘" 
                       style={{
                         width: '60px',
@@ -666,7 +666,7 @@ const FieldStudyGuide = () => {
                   }}>
                     <div style={{ textAlign: 'center', flex: '1', maxWidth: '100%' }}>
                       <img 
-                        src={getImageUrl('galaxy_monitoring_basic_set/galaxy_monitoring_basic_back.png')} 
+                        src={getImageUrl('field-study-guide/07-monitoring-usage/basic-settings/galaxy_monitoring_basic_back.png')} 
                         alt="갤럭시 워치 뒤로가기 버튼" 
                         style={{
                           maxWidth: '100%',
@@ -678,7 +678,7 @@ const FieldStudyGuide = () => {
                     </div>
                     <div style={{ textAlign: 'center', flex: '1', maxWidth: '100%' }}>
                       <img 
-                        src={getImageUrl('galaxy_monitoring_basic_set/galaxy_monitoring_basic_swipe.png')} 
+                        src={getImageUrl('field-study-guide/07-monitoring-usage/basic-settings/galaxy_monitoring_basic_swipe.png')} 
                         alt="화면을 왼쪽에서 오른쪽으로 밀면 이전 화면으로 돌아감" 
                         style={{
                           maxWidth: '100%',
@@ -707,7 +707,7 @@ const FieldStudyGuide = () => {
                   
                   <div style={{ textAlign: 'center', margin: '30px 0' }}>
                     <img 
-                      src={getImageUrl('off_vibration_2.png')} 
+                      src={getImageUrl('field-study-guide/07-monitoring-usage/basic-settings/off_vibration_2.png')} 
                       alt="진동을 끄고 싶은 경우(방해금지 모드)" 
                       style={{
                         maxWidth: '100%',
@@ -755,7 +755,7 @@ const FieldStudyGuide = () => {
                 }}>
                   <div style={{ textAlign: 'center' }}>
                     <img 
-                      src={getImageUrl('auto_measure/auto_measure_1.png')} 
+                      src={getImageUrl('field-study-guide/07-monitoring-usage/auto-measure/auto_measure_1.png')} 
                       alt="센서 데이터 수집 중" 
                       style={{
                         maxWidth: '100%',
@@ -767,7 +767,7 @@ const FieldStudyGuide = () => {
                   </div>
                   <div style={{ textAlign: 'center' }}>
                     <img 
-                      src={getImageUrl('auto_measure/auto_measure-3.png')} 
+                      src={getImageUrl('field-study-guide/07-monitoring-usage/auto-measure/auto_measure-3.png')} 
                       alt="피드백 요청됨" 
                       style={{
                         maxWidth: '100%',
@@ -779,7 +779,7 @@ const FieldStudyGuide = () => {
                   </div>
                   <div style={{ textAlign: 'center' }}>
                     <img 
-                      src={getImageUrl('auto_measure/auto_measure-4.png')} 
+                      src={getImageUrl('field-study-guide/07-monitoring-usage/auto-measure/auto_measure-4.png')} 
                       alt="스트레스 측정 결과 (스트레스)" 
                       style={{
                         maxWidth: '100%',
@@ -791,7 +791,7 @@ const FieldStudyGuide = () => {
                   </div>
                   <div style={{ textAlign: 'center' }}>
                     <img 
-                      src={getImageUrl('auto_measure/auto_measure-5.png')} 
+                      src={getImageUrl('field-study-guide/07-monitoring-usage/auto-measure/auto_measure-5.png')} 
                       alt="스트레스 측정 결과 (스트레스)" 
                       style={{
                         maxWidth: '100%',
@@ -809,7 +809,7 @@ const FieldStudyGuide = () => {
                     <li>오토측정은 회원가입 다음 날부터 자동진행됩니다.</li>
                     <li>오토측정은 하루 12회, 1시간 간격으로 자동 측정되며, 각 측정은 1분 동안 진행됩니다.</li>
                     <li>측정이 끝나면 스트레스 알림이 표시되며(→2번 사진 참고), 알림을 클릭하여 스트레스 점수를 선택해주세요.</li>
-                    <li>스트레스가 있는 상태면 <img src={getImageUrl('auto_measure/auto_measure-7.png')} alt="스트레스" style={{width: '20px', height: '20px', display: 'inline', verticalAlign: 'middle', margin: '0 2px'}} /> 스트레스가 없는 상태면 <img src={getImageUrl('auto_measure/auto_measure-8.png')} alt="스트레스" style={{width: '20px', height: '20px', display: 'inline', verticalAlign: 'middle', margin: '0 2px'}} /> (→3번 사진 참고)으로 표시됩니다. 정오를 판단하기 위해 이어지는 화면에서 자신이 실제 느끼는 스트레스 강도를 숫자로 선택해주세요.</li>
+                    <li>스트레스가 있는 상태면 <img src={getImageUrl('field-study-guide/07-monitoring-usage/auto-measure/auto_measure-7.png')} alt="스트레스" style={{width: '20px', height: '20px', display: 'inline', verticalAlign: 'middle', margin: '0 2px'}} /> 스트레스가 없는 상태면 <img src={getImageUrl('field-study-guide/07-monitoring-usage/auto-measure/auto_measure-8.png')} alt="스트레스" style={{width: '20px', height: '20px', display: 'inline', verticalAlign: 'middle', margin: '0 2px'}} /> (→3번 사진 참고)으로 표시됩니다. 정오를 판단하기 위해 이어지는 화면에서 자신이 실제 느끼는 스트레스 강도를 숫자로 선택해주세요.</li>
                     <li>스트레스 점수를 선택하지 않을 시 진동이 울립니다.</li>
                   </ul>
                 </div>
@@ -817,13 +817,13 @@ const FieldStudyGuide = () => {
                 <div className="guide-subsection">
                   <h3 style={{ fontSize: '18px' }}>🔎 오토측정 횟수 확인 방법</h3>
                   <ul style={{ fontSize: '16px', lineHeight: '1.8', color: '#333' }}>
-                    <li>[오토측정중] 버튼 옆의 빨간색 숫자는 <img src={getImageUrl('auto_measure/auto_measure-9.png')} alt="0" style={{width: '30px', height: '30px', display: 'inline', verticalAlign: 'middle', margin: '0 2px'}} /> 오늘 완료된 오토측정 횟수를 의미합니다.</li>
+                    <li>[오토측정중] 버튼 옆의 빨간색 숫자는 <img src={getImageUrl('field-study-guide/07-monitoring-usage/auto-measure/auto_measure-9.png')} alt="0" style={{width: '30px', height: '30px', display: 'inline', verticalAlign: 'middle', margin: '0 2px'}} /> 오늘 완료된 오토측정 횟수를 의미합니다.</li>
                     <li>숫자가 6 미만이면 1시간 정도의 간격을 두고 [맥파측정] 버튼을 눌러 수동으로 측정해주세요.</li>
                   </ul>
                   
                   <div style={{ textAlign: 'center', margin: '20px 0' }}>
                     <img 
-                      src={getImageUrl('auto_measure/auto_measure-6.png')} 
+                      src={getImageUrl('field-study-guide/07-monitoring-usage/auto-measure/auto_measure-6.png')} 
                       alt="오토측정 상태 확인" 
                       style={{
                         ...squareImageStyle,
@@ -856,7 +856,7 @@ const FieldStudyGuide = () => {
                 }}>
                   <div style={{ textAlign: 'center' }}>
                     <img 
-                      src={getImageUrl('manual_measure/manual_measure-1.png')} 
+                      src={getImageUrl('field-study-guide/07-monitoring-usage/manual-measure/manual_measure-1.png')} 
                       alt="맥파측정 메뉴 선택" 
                       style={{
                         maxWidth: '100%',
@@ -868,7 +868,7 @@ const FieldStudyGuide = () => {
                   </div>
                   <div style={{ textAlign: 'center' }}>
                     <img 
-                      src={getImageUrl('manual_measure/manual_measure-2.png')} 
+                      src={getImageUrl('field-study-guide/07-monitoring-usage/manual-measure/manual_measure-2.png')} 
                       alt="측정 중" 
                       style={{
                         maxWidth: '100%',
@@ -880,7 +880,7 @@ const FieldStudyGuide = () => {
                   </div>
                   <div style={{ textAlign: 'center' }}>
                     <img 
-                      src={getImageUrl('manual_measure/manual_measure-3.png')} 
+                      src={getImageUrl('field-study-guide/07-monitoring-usage/manual-measure/manual_measure-3.png')} 
                       alt="스트레스 측정 결과 (스트레스)" 
                       style={{
                         maxWidth: '100%',
@@ -892,7 +892,7 @@ const FieldStudyGuide = () => {
                   </div>
                   <div style={{ textAlign: 'center' }}>
                     <img 
-                      src={getImageUrl('manual_measure/manual_measure-4.png')} 
+                      src={getImageUrl('field-study-guide/07-monitoring-usage/manual-measure/manual_measure-4.png')} 
                       alt="스트레스 측정 결과 (스트레스)" 
                       style={{
                         maxWidth: '100%',
@@ -909,7 +909,7 @@ const FieldStudyGuide = () => {
                   <ul style={{ fontSize: '16px', lineHeight: '1.8', color: '#333' }}>
                     <li>맥파측정은 오토측정을 놓쳤을 경우 수동으로 진행되며, 1분 동안 진행됩니다.</li>
                     <li>측정이 끝나면 스트레스 점수를 반드시 선택해야 합니다.(→3번 사진 참고).</li>
-                    <li>스트레스가 있는 상태면 <img src={getImageUrl('manual_measure/manual_measure-5.png')} alt="스트레스" style={{width: '20px', height: '20px', display: 'inline', verticalAlign: 'middle', margin: '0 2px'}} /> 스트레스가 없는 상태면 <img src={getImageUrl('manual_measure/manual_measure-6.png')} alt="스트레스" style={{width: '20px', height: '20px', display: 'inline', verticalAlign: 'middle', margin: '0 2px'}} /> (→3번 사진 참고)으로 표시됩니다. 정오를 판단하기 위해 이어지는 화면에서 자신이 실제 느끼는 스트레스 강도를 숫자로 선택해주세요.</li>
+                    <li>스트레스가 있는 상태면 <img src={getImageUrl('field-study-guide/07-monitoring-usage/manual-measure/manual_measure-5.png')} alt="스트레스" style={{width: '20px', height: '20px', display: 'inline', verticalAlign: 'middle', margin: '0 2px'}} /> 스트레스가 없는 상태면 <img src={getImageUrl('field-study-guide/07-monitoring-usage/manual-measure/manual_measure-6.png')} alt="스트레스" style={{width: '20px', height: '20px', display: 'inline', verticalAlign: 'middle', margin: '0 2px'}} /> (→3번 사진 참고)으로 표시됩니다. 정오를 판단하기 위해 이어지는 화면에서 자신이 실제 느끼는 스트레스 강도를 숫자로 선택해주세요.</li>
                     <li>맥파측정 후 30분 동안 재측정이 불가합니다.</li>
                   </ul>
                 </div>
@@ -938,7 +938,7 @@ const FieldStudyGuide = () => {
                 }}>
                   <div style={{ textAlign: 'center', flex: '1', maxWidth: '100%' }}>
                     <img 
-                      src={getImageUrl('walk_measure/walk_measure.png-1.png')} 
+                      src={getImageUrl('field-study-guide/07-monitoring-usage/walk-measure/walk_measure.png-1.png')} 
                       alt="걷기측정 메뉴 선택" 
                       style={{
                         maxWidth: '100%',
@@ -950,7 +950,7 @@ const FieldStudyGuide = () => {
                   </div>
                   <div style={{ textAlign: 'center', flex: '1', maxWidth: '100%' }}>
                     <img 
-                      src={getImageUrl('walk_measure/walk_measure.png-2.png')} 
+                      src={getImageUrl('field-study-guide/07-monitoring-usage/walk-measure/walk_measure.png-2.png')} 
                       alt="걷기측정 중" 
                       style={{
                         maxWidth: '100%',
@@ -983,7 +983,7 @@ const FieldStudyGuide = () => {
               <h3>1. 환경설정 클릭</h3>
               <div style={{ textAlign: 'center', margin: '20px 0' }}>
                 <img 
-                  src={getImageUrl('dev_mode/dev_mode-1.png')} 
+                  src={getImageUrl('field-study-guide/04-dev-mode/dev_mode-1.png')} 
                   alt="환경설정 클릭" 
                   style={{
                     ...squareImageStyle,
@@ -997,7 +997,7 @@ const FieldStudyGuide = () => {
               <h3>2. 애플리케이션 클릭</h3>
               <div style={{ textAlign: 'center', margin: '20px 0' }}>
                 <img 
-                  src={getImageUrl('dev_mode/dev_mode-2.png')} 
+                  src={getImageUrl('field-study-guide/04-dev-mode/dev_mode-2.png')} 
                   alt="애플리케이션 클릭" 
                   style={{
                     ...squareImageStyle,
@@ -1011,7 +1011,7 @@ const FieldStudyGuide = () => {
               <h3>3. 헬스 플랫폼 클릭</h3>
               <div style={{ textAlign: 'center', margin: '20px 0' }}>
                 <img 
-                  src={getImageUrl('dev_mode/dev_mode-3.png')} 
+                  src={getImageUrl('field-study-guide/04-dev-mode/dev_mode-3.png')} 
                   alt="헬스 플랫폼 클릭" 
                   style={{
                     ...squareImageStyle,
@@ -1025,7 +1025,7 @@ const FieldStudyGuide = () => {
               <h3>4. 헬스 플랫폼을 10번 클릭</h3>
               <div style={{ textAlign: 'center', margin: '20px 0' }}>
                 <img 
-                  src={getImageUrl('dev_mode/dev_mode-4.png')} 
+                  src={getImageUrl('field-study-guide/04-dev-mode/dev_mode-4.png')} 
                   alt="헬스 플랫폼을 10번 클릭" 
                   style={{
                     ...squareImageStyle,
@@ -1039,7 +1039,7 @@ const FieldStudyGuide = () => {
               <h3>5. [Dev mode] 글자 나오면 성공!</h3>
               <div style={{ textAlign: 'center', margin: '20px 0' }}>
                 <img 
-                  src={getImageUrl('dev_mode/dev_mode-5.png')} 
+                  src={getImageUrl('field-study-guide/04-dev-mode/dev_mode-5.png')} 
                   alt="[Dev mode] 글자 나오면 성공!" 
                   style={{
                     ...squareImageStyle,
@@ -1060,7 +1060,7 @@ const FieldStudyGuide = () => {
               <h3>1. 상단 메뉴 혹은 설정에서 Bluetooth 켠 후 앱 목록에서 Galaxy Wearable 찾아 실행</h3>
               <div style={{ textAlign: 'center', margin: '20px 0' }}>
                 <img 
-                  src={getImageUrl('galaxy_pair/galaxy_pair-1.png')} 
+                  src={getImageUrl('field-study-guide/03-pairing/galaxy_pair-1.png')} 
                   alt="삼성 스마트폰 홈화면에서 Galaxy Wearable 찾기" 
                   style={{
                     ...watchImageStyle,
@@ -1074,7 +1074,7 @@ const FieldStudyGuide = () => {
               <h3>2. 자동 연결 혹은 기기 선택에서 스마트워치 선택</h3>
               <div style={{ textAlign: 'center', margin: '20px 0' }}>
                 <img 
-                  src={getImageUrl('galaxy_pair/galaxy_pair_2.png')} 
+                  src={getImageUrl('field-study-guide/03-pairing/galaxy_pair_2.png')} 
                   alt="Watch6 워치에 연결중 화면" 
                   style={{
                     ...watchImageStyle,
@@ -1088,7 +1088,7 @@ const FieldStudyGuide = () => {
               <h3>3. 확인 클릭</h3>
               <div style={{ textAlign: 'center', margin: '20px 0' }}>
                 <img 
-                  src={getImageUrl('galaxy_pair/galaxy_pair-3.png')} 
+                  src={getImageUrl('field-study-guide/03-pairing/galaxy_pair-3.png')} 
                   alt="워치에 표시된 숫자가 일치하는지 확인하세요" 
                   style={{
                     ...watchImageStyle,
@@ -1099,7 +1099,7 @@ const FieldStudyGuide = () => {
                   }}
                 />
                 <img 
-                  src={getImageUrl('galaxy_pair/galaxy_pair_number.png')} 
+                  src={getImageUrl('field-study-guide/03-pairing/galaxy_pair_number.png')} 
                   alt="워치 화면에서 시작중..." 
                   style={{
                     ...squareImageStyle,
@@ -1116,7 +1116,7 @@ const FieldStudyGuide = () => {
               <h3>4. 모두 동의 클릭 후 계속</h3>
               <div style={{ textAlign: 'center', margin: '20px 0' }}>
                 <img 
-                  src={getImageUrl('galaxy_pair/galaxy_pair-4.png')} 
+                  src={getImageUrl('field-study-guide/03-pairing/galaxy_pair-4.png')} 
                   alt="아래 항목에 동의하고 계속 진행" 
                   style={{
                     ...watchImageStyle,
@@ -1130,7 +1130,7 @@ const FieldStudyGuide = () => {
               <h3>5. Google 계정 로그인(위와 같은 화면이 뜰 경우 다시 시도 클릭)</h3>
               <div style={{ textAlign: 'center', margin: '20px 0' }}>
                 <img 
-                  src={getImageUrl('galaxy_pair/galaxy_pair_2-1.png')} 
+                  src={getImageUrl('field-study-guide/03-pairing/galaxy_pair_2-1.png')} 
                   alt="Google 계정을 복사할 수 없습니다" 
                   style={{
                     ...watchImageStyle,
@@ -1144,7 +1144,7 @@ const FieldStudyGuide = () => {
               <h3>6. 동의 클릭</h3>
               <div style={{ textAlign: 'center', margin: '20px 0' }}>
                 <img 
-                  src={getImageUrl('galaxy_pair/galaxy_pair_2-2.png')} 
+                  src={getImageUrl('field-study-guide/03-pairing/galaxy_pair_2-2.png')} 
                   alt="서비스 약관 동의" 
                   style={{
                     ...watchImageStyle,
@@ -1158,7 +1158,7 @@ const FieldStudyGuide = () => {
               <h3>7. 다음 클릭</h3>
               <div style={{ textAlign: 'center', margin: '20px 0' }}>
                 <img 
-                  src={getImageUrl('galaxy_pair/galaxy_pair_2-3.png')} 
+                  src={getImageUrl('field-study-guide/03-pairing/galaxy_pair_2-3.png')} 
                   alt="워치 데이터 자동 백업" 
                   style={{
                     ...watchImageStyle,
@@ -1178,7 +1178,7 @@ const FieldStudyGuide = () => {
                 justifyItems: 'center'
               }}>
                 <img 
-                  src={getImageUrl('galaxy_pair/galaxy_pair_2-4.png')} 
+                  src={getImageUrl('field-study-guide/03-pairing/galaxy_pair_2-4.png')} 
                   alt="삼성 Smart Switch - 데이터 전송하기" 
                   style={{
                     ...watchImageStyle,
@@ -1186,7 +1186,7 @@ const FieldStudyGuide = () => {
                   }}
                 />
                 <img 
-                  src={getImageUrl('galaxy_pair/galaxy_pair_2-5.png')} 
+                  src={getImageUrl('field-study-guide/03-pairing/galaxy_pair_2-5.png')} 
                   alt="삼성 Smart Switch의 필요한 사용을 위한 접근 권한 안내" 
                   style={{
                     ...watchImageStyle,
@@ -1194,7 +1194,7 @@ const FieldStudyGuide = () => {
                   }}
                 />
                 <img 
-                  src={getImageUrl('galaxy_pair/galaxy_pair_2-6.png')} 
+                  src={getImageUrl('field-study-guide/03-pairing/galaxy_pair_2-6.png')} 
                   alt="백터리 사용량 최적화 동의" 
                   style={{
                     ...watchImageStyle,
@@ -1202,7 +1202,7 @@ const FieldStudyGuide = () => {
                   }}
                 />
                 <img 
-                  src={getImageUrl('galaxy_pair/galaxy_pair_2-7.png')} 
+                  src={getImageUrl('field-study-guide/03-pairing/galaxy_pair_2-7.png')} 
                   alt="워치의 Smart Switch 사용 권한" 
                   style={{
                     ...watchImageStyle,
@@ -1216,7 +1216,7 @@ const FieldStudyGuide = () => {
               <h3>9. 허용 클릭</h3>
               <div style={{ textAlign: 'center', margin: '20px 0' }}>
                 <img 
-                  src={getImageUrl('galaxy_pair/galaxy_pair_3-1.png')} 
+                  src={getImageUrl('field-study-guide/03-pairing/galaxy_pair_3-1.png')} 
                   alt="워치의 Smart Switch 사용 권한" 
                   style={{
                     ...watchImageStyle,
@@ -1230,7 +1230,7 @@ const FieldStudyGuide = () => {
               <h3>10. 개인 설정 후 다음 클릭</h3>
               <div style={{ textAlign: 'center', margin: '20px 0' }}>
                 <img 
-                  src={getImageUrl('galaxy_pair/galaxy_pair_3-2.png')} 
+                  src={getImageUrl('field-study-guide/03-pairing/galaxy_pair_3-2.png')} 
                   alt="워치를 착용할 손목 설정" 
                   style={{
                     ...watchImageStyle,
@@ -1244,7 +1244,7 @@ const FieldStudyGuide = () => {
               <h3>11. 동의 클릭</h3>
               <div style={{ textAlign: 'center', margin: '20px 0' }}>
                 <img 
-                  src={getImageUrl('galaxy_pair/galaxy_pair_3-3.png')} 
+                  src={getImageUrl('field-study-guide/03-pairing/galaxy_pair_3-3.png')} 
                   alt="사전 설치된 워치 앱에서 필요한 권한" 
                   style={{
                     ...watchImageStyle,
@@ -1258,7 +1258,7 @@ const FieldStudyGuide = () => {
               <h3>12. 페어링 완료!</h3>
               <div style={{ textAlign: 'center', margin: '20px 0' }}>
                 <img 
-                  src={getImageUrl('galaxy_pair/galaxy_pair_3-4.png')} 
+                  src={getImageUrl('field-study-guide/03-pairing/galaxy_pair_3-4.png')} 
                   alt="완료 중... 페어링 완료" 
                   style={{
                     ...watchImageStyle,
@@ -1280,7 +1280,7 @@ const FieldStudyGuide = () => {
                   <h2>■ 전원 켜고 끄는 법</h2>
                   <div style={{ textAlign: 'center', margin: '20px 0' }}>
                     <img 
-                      src={getImageUrl('galaxy_watch_power/galaxy_watch_power_1.png')} 
+                      src={getImageUrl('field-study-guide/02-basic-usage/power/galaxy_watch_power_1.png')} 
                       alt="갤럭시 워치 전원 켜기" 
                       style={watchImageStyle}
                     />
@@ -1295,7 +1295,7 @@ const FieldStudyGuide = () => {
                   <ul>
                     <li>홈 버튼과 뒤로가기 버튼을 동시에 길게 눌러 
                       <img 
-                        src={getImageUrl('galaxy_watch_power/galaxy_watch_power_button.png')} 
+                        src={getImageUrl('field-study-guide/02-basic-usage/power/galaxy_watch_power_button.png')} 
                         alt="전원 버튼" 
                         style={{ width: '30px', height: '30px', margin: '0 0px', verticalAlign: 'middle' }}
                       /> 
@@ -1308,7 +1308,7 @@ const FieldStudyGuide = () => {
                   <h2>■ 화면 켜고 끄는 법</h2>
                   <div style={{ textAlign: 'center', margin: '20px 0' }}>
                     <img 
-                      src={getImageUrl('galaxy_watch_power/galaxy_watch_power_2.png')} 
+                      src={getImageUrl('field-study-guide/02-basic-usage/power/galaxy_watch_power_2.png')} 
                       alt="갤럭시 워치 화면 제어" 
                       style={watchImageStyle}
                     />
@@ -1339,7 +1339,7 @@ const FieldStudyGuide = () => {
                     <h3>1. 화면을 왼쪽으로 밀면</h3>
                     <div style={{ textAlign: 'center', margin: '20px 0' }}>
                       <img 
-                        src={getImageUrl('galaxy_watch_basic/galaxywatch_basic_1.png')} 
+                        src={getImageUrl('field-study-guide/02-basic-usage/basic/galaxywatch_basic_1.png')} 
                         alt="갤럭시 워치 활동 링" 
                         style={watchImageStyle}
                       />
@@ -1353,7 +1353,7 @@ const FieldStudyGuide = () => {
                     <h3>2. 화면을 오른쪽으로 밀면</h3>
                     <div style={{ textAlign: 'center', margin: '20px 0' }}>
                       <img 
-                        src={getImageUrl('auto_measure/auto_measure-3.png')} 
+                        src={getImageUrl('field-study-guide/07-monitoring-usage/auto-measure/auto_measure-3.png')} 
                         alt="갤럭시 워치 알림" 
                         style={watchImageStyle}
                       />
@@ -1368,7 +1368,7 @@ const FieldStudyGuide = () => {
                     <h3>3. 화면을 아래로 밀면</h3>
                     <div style={{ textAlign: 'center', margin: '20px 0' }}>
                       <img 
-                        src={getImageUrl('galaxy_watch_basic/galaxywatch_basic_3.png')} 
+                        src={getImageUrl('field-study-guide/02-basic-usage/basic/galaxywatch_basic_3.png')} 
                         alt="갤럭시 워치 빠른 설정" 
                         style={watchImageStyle}
                       />
@@ -1382,7 +1382,7 @@ const FieldStudyGuide = () => {
                     <h3>4. 화면을 위로 밀면</h3>
                     <div style={{ textAlign: 'center', margin: '20px 0' }}>
                       <img 
-                        src={getImageUrl('galaxy_watch_basic/galaxywatch_basic_4.png')} 
+                        src={getImageUrl('field-study-guide/02-basic-usage/basic/galaxywatch_basic_4.png')} 
                         alt="갤럭시 워치 앱 메뉴" 
                         style={watchImageStyle}
                       />
@@ -1431,7 +1431,7 @@ const FieldStudyGuide = () => {
               }}>
                 <div style={{ textAlign: 'center', flex: '1', maxWidth: '100%' }}>
                   <img 
-                    src={getImageUrl('record/record1-1.png')}
+                    src={getImageUrl('field-study-guide/08-voice-recording/record1-1.png')}
                     alt="음성 녹음앱 클릭" 
                     style={{
                       maxWidth: '100%',
@@ -1456,7 +1456,7 @@ const FieldStudyGuide = () => {
               }}>
                 <div style={{ textAlign: 'center', flex: '1', maxWidth: '100%' }}>
                   <img 
-                    src={getImageUrl('record/record1-2.png')}
+                    src={getImageUrl('field-study-guide/08-voice-recording/record1-2.png')}
                     alt="연상 단어 5개 녹음하기" 
                     style={{
                       maxWidth: '100%',
@@ -1481,7 +1481,7 @@ const FieldStudyGuide = () => {
               }}>
                 <div style={{ textAlign: 'center', flex: '1', maxWidth: '100%' }}>
                   <img 
-                    src={getImageUrl('record/record2-1.png')}
+                    src={getImageUrl('field-study-guide/08-voice-recording/record2-1.png')}
                     alt="3. 녹음 후 저장 예) 김경찰0710" 
                     style={{
                       maxWidth: '100%',
@@ -1506,7 +1506,7 @@ const FieldStudyGuide = () => {
               }}>
                 <div style={{ textAlign: 'center', flex: '1', maxWidth: '100%' }}>
                   <img 
-                    src={getImageUrl('record/record2-2.png')}
+                    src={getImageUrl('field-study-guide/08-voice-recording/record2-2.png')}
                     alt="4. 파일 꾹 눌러 선택" 
                     style={{
                       maxWidth: '100%',
@@ -1531,7 +1531,7 @@ const FieldStudyGuide = () => {
               }}>
                 <div style={{ textAlign: 'center', flex: '1', maxWidth: '100%' }}>
                   <img 
-                    src={getImageUrl('record/record2-3.png')}
+                    src={getImageUrl('field-study-guide/08-voice-recording/record2-3.png')}
                     alt="5. 카카오톡 아이콘 클릭" 
                     style={{
                       maxWidth: '100%',
@@ -1556,7 +1556,7 @@ const FieldStudyGuide = () => {
               }}>
                 <div style={{ textAlign: 'center' }}>
                   <img 
-                    src={getImageUrl('record/record2-4.png')}
+                    src={getImageUrl('field-study-guide/08-voice-recording/record2-4.png')}
                     alt="6. 해당 연구원 1:1 카톡방에 파일 전송-1" 
                     style={{
                       maxWidth: '100%',
@@ -1568,7 +1568,7 @@ const FieldStudyGuide = () => {
                 </div>
                 <div style={{ textAlign: 'center' }}>
                   <img 
-                    src={getImageUrl('record/record2-5.png')}
+                    src={getImageUrl('field-study-guide/08-voice-recording/record2-5.png')}
                     alt="6. 해당 연구원 1:1 카톡방에 파일 전송-2" 
                     style={{
                       maxWidth: '100%',
@@ -1597,7 +1597,7 @@ const FieldStudyGuide = () => {
                 margin: '20px 0'
               }}>
                 <img 
-                  src={getImageUrl('samsung_health_download/samsung_health_download_1/samsung_health_download_1-2.png')}
+                  src={getImageUrl('field-study-guide/09-samsung-health-download/samsung_health_download_1/samsung_health_download_1-2.png')}
                   alt="삼성 헬스 앱 아이콘 클릭" 
                   style={{
                     ...phoneImageStyle,
@@ -1616,7 +1616,7 @@ const FieldStudyGuide = () => {
                 margin: '20px 0'
               }}>
                 <img 
-                  src={getImageUrl('samsung_health_download/samsung_health_download_1/samsung_health_download_1-3.png')}
+                  src={getImageUrl('field-study-guide/09-samsung-health-download/samsung_health_download_1/samsung_health_download_1-3.png')}
                   alt="삼성 헬스 메인 화면" 
                   style={{
                     ...phoneImageStyle,
@@ -1635,7 +1635,7 @@ const FieldStudyGuide = () => {
                 margin: '20px 0'
               }}>
                 <img 
-                  src={getImageUrl('samsung_health_download/samsung_health_download_1/samsung_health_download_1-1.png')}
+                  src={getImageUrl('field-study-guide/09-samsung-health-download/samsung_health_download_1/samsung_health_download_1-1.png')}
                   alt="우측 상단 메뉴 버튼 클릭" 
                   style={{
                     ...phoneImageStyle,
@@ -1654,7 +1654,7 @@ const FieldStudyGuide = () => {
                 margin: '20px 0'
               }}>
                 <img 
-                  src={getImageUrl('samsung_health_download/samsung_health_download_1/samsung_health_download_1-4.png')}
+                  src={getImageUrl('field-study-guide/09-samsung-health-download/samsung_health_download_1/samsung_health_download_1-4.png')}
                   alt="설정 메뉴 클릭" 
                   style={{
                     ...phoneImageStyle,
@@ -1673,7 +1673,7 @@ const FieldStudyGuide = () => {
                 margin: '20px 0'
               }}>
                 <img 
-                  src={getImageUrl('samsung_health_download/samsung_health_download_1/samsung_health_download_1-5.png')}
+                  src={getImageUrl('field-study-guide/09-samsung-health-download/samsung_health_download_1/samsung_health_download_1-5.png')}
                   alt="개인 데이터 다운로드 메뉴" 
                   style={{
                     ...phoneImageStyle,
@@ -1692,7 +1692,7 @@ const FieldStudyGuide = () => {
                 margin: '20px 0'
               }}>
                 <img 
-                  src={getImageUrl('samsung_health_download/samsung_health_download_2/samsung_health_download_2-1.png')}
+                  src={getImageUrl('field-study-guide/09-samsung-health-download/samsung_health_download_2/samsung_health_download_2-1.png')}
                   alt="앱 접근 허용" 
                   style={{
                     ...phoneImageStyle,
@@ -1711,7 +1711,7 @@ const FieldStudyGuide = () => {
                 margin: '20px 0'
               }}>
                 <img 
-                  src={getImageUrl('samsung_health_download/samsung_health_download_2/samsung_health_download_2-2.png')}
+                  src={getImageUrl('field-study-guide/09-samsung-health-download/samsung_health_download_2/samsung_health_download_2-2.png')}
                   alt="허용 안함 선택" 
                   style={{
                     ...phoneImageStyle,
@@ -1730,7 +1730,7 @@ const FieldStudyGuide = () => {
                 margin: '20px 0'
               }}>
                 <img 
-                  src={getImageUrl('samsung_health_download/samsung_health_download_2/samsung_health_download_2-3.png')}
+                  src={getImageUrl('field-study-guide/09-samsung-health-download/samsung_health_download_2/samsung_health_download_2-3.png')}
                   alt="개인 데이터 다운로드 클릭" 
                   style={{
                     ...phoneImageStyle,
@@ -1749,7 +1749,7 @@ const FieldStudyGuide = () => {
                 margin: '20px 0'
               }}>
                 <img 
-                  src={getImageUrl('samsung_health_download/samsung_health_download_2/samsung_health_download_2-4.png')}
+                  src={getImageUrl('field-study-guide/09-samsung-health-download/samsung_health_download_2/samsung_health_download_2-4.png')}
                   alt="다운로드 버튼 클릭" 
                   style={{
                     ...phoneImageStyle,
@@ -1768,7 +1768,7 @@ const FieldStudyGuide = () => {
                 margin: '20px 0'
               }}>
                 <img 
-                  src={getImageUrl('samsung_health_download/samsung_health_download_2/samsung_health_download_2-5.png')}
+                  src={getImageUrl('field-study-guide/09-samsung-health-download/samsung_health_download_2/samsung_health_download_2-5.png')}
                   alt="압축 진행 중" 
                   style={{
                     ...phoneImageStyle,
@@ -1787,7 +1787,7 @@ const FieldStudyGuide = () => {
                 margin: '20px 0'
               }}>
                 <img 
-                  src={getImageUrl('samsung_health_download/samsung_health_download_3/samsung_health_download_3-1.png')}
+                  src={getImageUrl('field-study-guide/09-samsung-health-download/samsung_health_download_3/samsung_health_download_3-1.png')}
                   alt="액세스 팝업 허용" 
                   style={{
                     ...phoneImageStyle,
@@ -1806,7 +1806,7 @@ const FieldStudyGuide = () => {
                 margin: '20px 0'
               }}>
                 <img 
-                  src={getImageUrl('samsung_health_download/samsung_health_download_3/samsung_health_download_3-2.png')}
+                  src={getImageUrl('field-study-guide/09-samsung-health-download/samsung_health_download_3/samsung_health_download_3-2.png')}
                   alt="다운로드 진행 중" 
                   style={{
                     ...phoneImageStyle,
@@ -1825,7 +1825,7 @@ const FieldStudyGuide = () => {
                 margin: '20px 0'
               }}>
                 <img 
-                  src={getImageUrl('samsung_health_download/samsung_health_download_3/samsung_health_download_3-3.png')}
+                  src={getImageUrl('field-study-guide/09-samsung-health-download/samsung_health_download_3/samsung_health_download_3-3.png')}
                   alt="폴더 압축 중" 
                   style={{
                     ...phoneImageStyle,
@@ -1844,7 +1844,7 @@ const FieldStudyGuide = () => {
                 margin: '20px 0'
               }}>
                 <img 
-                  src={getImageUrl('samsung_health_download/samsung_health_download_3/samsung_health_download_3-4.png')}
+                  src={getImageUrl('field-study-guide/09-samsung-health-download/samsung_health_download_3/samsung_health_download_3-4.png')}
                   alt="위로 가기 버튼 클릭" 
                   style={{
                     ...phoneImageStyle,
@@ -1863,7 +1863,7 @@ const FieldStudyGuide = () => {
                 margin: '20px 0'
               }}>
                 <img 
-                  src={getImageUrl('samsung_health_download/samsung_health_download_3/samsung_health_download_3-5.png')}
+                  src={getImageUrl('field-study-guide/09-samsung-health-download/samsung_health_download_3/samsung_health_download_3-5.png')}
                   alt="파일 선택하기" 
                   style={{
                     ...phoneImageStyle,
