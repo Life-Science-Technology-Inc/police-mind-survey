@@ -244,10 +244,9 @@ const FieldStudyGuide = () => {
         {/* 웹 회원가입 및 근무일정 탭 */}
         {activeMainTab === 'web-registration' && (
           <div className="guide-section">
-            <h2>■ KIST 통합관제시스템 회원가입 및 근무일정 설명</h2>
+            <h2>■ 실증 실험 모니터링 시스템 회원가입 및 근무일정 설명</h2>
             
             <div className="guide-subsection">
-
               <h3>
                 1. 
                 <a 
@@ -256,7 +255,7 @@ const FieldStudyGuide = () => {
                       rel="noopener noreferrer"
                       style={{ color: 'red', fontWeight: 'bold', textDecoration: 'underline' }}
                     >
-                      KIST 통합관제시스템 링크
+                      실증실험 모니터링 시스템
                     </a>
                      접속 후 회원가입 클릭</h3>
               <div style={{ 
@@ -266,8 +265,8 @@ const FieldStudyGuide = () => {
                 margin: '20px 0'
               }}>
                 <img 
-                  src={getImageUrl('field-study-guide/06-web-registration/metahealth_web-6.png')}
-                  alt="KIST 통합관제시스템 로그인 페이지" 
+                  src={getImageUrl('field-study-guide/06-web-registration/new_page1.png')}
+                  alt="실증실험 모니터링 시스템 접속 후 회원가입 클릭" 
                   style={{
                     maxWidth: '100%',
                     width: window.innerWidth > 768 ? '400px' : '90%',
@@ -281,7 +280,7 @@ const FieldStudyGuide = () => {
             </div>
 
             <div className="guide-subsection">
-              <h3>2. 회원가입 하기</h3>
+              <h3>2. 회원가입하기</h3>
               <div style={{ 
                 display: 'flex',
                 justifyContent: 'center',
@@ -289,7 +288,7 @@ const FieldStudyGuide = () => {
                 margin: '20px 0'
               }}>
                 <img 
-                  src={getImageUrl('field-study-guide/06-web-registration/metahealth_web_modify.png-1.png')} 
+                  src={getImageUrl('field-study-guide/06-web-registration/new_page2.png')} 
                   alt="간편 회원가입 페이지" 
                   style={{
                     maxWidth: '100%',
@@ -303,7 +302,7 @@ const FieldStudyGuide = () => {
             </div>
 
             <div className="guide-subsection">
-              <h3>3. 로그인 후 근무일정 클릭</h3>
+              <h3>3. 로그인 후 [근무 일정] 클릭</h3>
               <div style={{ 
                 display: 'flex',
                 justifyContent: 'center',
@@ -311,8 +310,8 @@ const FieldStudyGuide = () => {
                 margin: '20px 0'
               }}>
                 <img 
-                  src={getImageUrl('field-study-guide/06-web-registration/metahealth_web_modify.png-2.png')}
-                  alt="로그인 후 메인 페이지에서 메뉴 클릭" 
+                  src={getImageUrl('field-study-guide/06-web-registration/new_page3.png')}
+                  alt="로그인 후 근무 일정 클릭" 
                   style={{
                     maxWidth: '100%',
                     width: window.innerWidth > 768 ? '400px' : '90%',
@@ -325,39 +324,66 @@ const FieldStudyGuide = () => {
             </div>
 
             <div className="guide-subsection">
-              <h3>4. 근무 일정에 따라 근무 타입 수정</h3>
-              <div style={{ textAlign: 'center', margin: '20px 0' }}>
+              <h3>4. 근무 일정 등록하기</h3>
+              <div style={{ 
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                margin: '20px 0'
+              }}>
                 <img 
-                  src={getImageUrl('field-study-guide/06-web-registration/metahealth_web_modify.png-3.png')} 
-                  alt="근무일정 메뉴 선택" 
+                  src={getImageUrl('field-study-guide/06-web-registration/new_page4.png')} 
+                  alt="근무 일정 등록하기" 
                   style={{
                     maxWidth: '100%',
                     width: window.innerWidth > 768 ? '400px' : '90%',
-                    height: 'auto'
-                  }}
-                />
-                <img 
-                  src={getImageUrl('field-study-guide/06-web-registration/metahealth_web_modify.png-4.png')} 
-                  alt="근무일정 메뉴 선택" 
-                  style={{
-                    maxWidth: '100%',
-                    width: window.innerWidth > 768 ? '400px' : '90%',
-                    height: 'auto'
+                    height: 'auto',
+                    display: 'block',
+                    margin: '0 auto'
                   }}
                 />
               </div>
             </div>
 
             <div className="guide-subsection">
-              <h3>5. Shift updated successfully!가 나오면 성공!</h3>
-              <div style={{ textAlign: 'center', margin: '20px 0' }}>
+              <h3>5. 아래에서 등록된 근무 일정 확인 가능</h3>
+              <div style={{ 
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                margin: '20px 0'
+              }}>
                 <img 
-                  src={getImageUrl('field-study-guide/06-web-registration/metahealth_web_modify.png-5.png')} 
-                  alt="근무일정 입력 페이지" 
+                  src={getImageUrl('field-study-guide/06-web-registration/new_page5.png')} 
+                  alt="등록된 근무 일정 확인" 
                   style={{
                     maxWidth: '100%',
                     width: window.innerWidth > 768 ? '400px' : '90%',
-                    height: 'auto'
+                    height: 'auto',
+                    display: 'block',
+                    margin: '0 auto'
+                  }}
+                />
+              </div>
+            </div>
+
+            <div className="guide-subsection">
+              <h3>6. BRS, BIG5 설문까지 완료하기</h3>
+              <div style={{ 
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                margin: '20px 0'
+              }}>
+                <img 
+                  src={getImageUrl('field-study-guide/06-web-registration/new_page6.png')} 
+                  alt="BRS와 BIG5 설문 완료" 
+                  style={{
+                    maxWidth: '100%',
+                    width: window.innerWidth > 768 ? '400px' : '90%',
+                    height: 'auto',
+                    display: 'block',
+                    margin: '0 auto'
                   }}
                 />
               </div>
