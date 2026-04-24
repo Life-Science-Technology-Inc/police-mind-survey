@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/police-mind-survey/static/css/main.c4496571.css",
-    "main.js": "/police-mind-survey/static/js/main.04f6304b.js",
+    "main.css": "/police-mind-survey/static/css/main.ba8874fc.css",
+    "main.js": "/police-mind-survey/static/js/main.e047e6de.js",
     "static/js/952.fed4e14b.chunk.js": "/police-mind-survey/static/js/952.fed4e14b.chunk.js",
     "index.html": "/police-mind-survey/index.html",
-    "main.c4496571.css.map": "/police-mind-survey/static/css/main.c4496571.css.map",
-    "main.04f6304b.js.map": "/police-mind-survey/static/js/main.04f6304b.js.map",
+    "main.ba8874fc.css.map": "/police-mind-survey/static/css/main.ba8874fc.css.map",
+    "main.e047e6de.js.map": "/police-mind-survey/static/js/main.e047e6de.js.map",
     "952.fed4e14b.chunk.js.map": "/police-mind-survey/static/js/952.fed4e14b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4496571.css",
-    "static/js/main.04f6304b.js"
+    "static/css/main.ba8874fc.css",
+    "static/js/main.e047e6de.js"
   ]
 }
