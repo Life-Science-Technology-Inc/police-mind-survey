@@ -226,7 +226,7 @@ const FieldStudyGuide = () => {
               margin: '20px 0'
             }}>
               <img 
-                src={getImageUrl('field-study-guide/01-experiment-preparation/ready.png')}
+                src={getImageUrl('field-study-guide/01-experiment-preparation/ready_new.png')}
                 alt="실험 준비 방법 순서도" 
                 style={{
                   maxWidth: '100%',
