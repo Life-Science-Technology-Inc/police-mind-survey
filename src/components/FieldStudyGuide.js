@@ -1858,7 +1858,7 @@ const FieldStudyGuide = () => {
             </div>
 
             <div className="guide-subsection">
-              <h3>15. dw2@kist.re.kr로 전송</h3>
+              <h3>15. 해당 연구원 1:1 카톡방에 폴더 전송</h3>
               <div style={{ 
                 display: 'flex',
                 justifyContent: 'center',
