@@ -669,6 +669,14 @@
 .sort-indicator {
   margin-left: 5px;
   font-size: 12px;
+  display: inline-block;
+  min-width: 16px;
+  text-align: center;
+  color: #4a5568;
+}
+
+.sort-indicator.muted {
+  color: #a0aec0;
 }
 
 /* 집단별 색상 */

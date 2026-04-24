@@ -669,7 +669,13 @@ const AdminPage = () => {
 
   // 정렬 화살표 표시 함수
   const renderSortArrow = (field) => {
-    if (field !== sortField) return null;
+    if (field !== sortField) {
+      return (
+        <span className="sort-indicator muted">
+          {' ⇅'}
+        </span>
+      );
+    }
     
     // 화살표 표시
     return (
