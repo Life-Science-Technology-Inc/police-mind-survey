@@ -86,20 +86,9 @@ const HomePage = () => {
 
   return (
     <div className="home-container">
-      <div className="home-org-block">
-        <p>경찰청</p>
-        <p>(주)라이프사이언스테크놀로지</p>
-        <p>한국과학기술연구원</p>
-        <p>강북삼성병원</p>
-      </div>
-
       <header className="home-header">
-        <h1>IoT, AI 기반 경찰 인적자원 향상성 관리 플랫폼 개발사업</h1>
+        <h1>경찰 맞춤형 스트레스 관리 모니터링 시스템 실증 실험 안내</h1>
       </header>
-      
-      <div className="home-title">
-        <h2>경찰 맞춤형 스트레스 관리 모니터링 시스템 실증 실험 안내</h2>
-      </div>
 
       <main className="home-content">
         {successMessage && (
@@ -163,6 +152,11 @@ const HomePage = () => {
             </div>
           </div>
 
+        </div>
+
+        <div className="home-footer-note">
+          <p>IoT, AI 기반 경찰 인적자원 향상성 관리 플랫폼 개발사업</p>
+          <p>경찰청, (주)라이프사이언스테크놀로지, 한국과학기술연구원, 강북삼성병원</p>
         </div>
       </main>
     </div>
