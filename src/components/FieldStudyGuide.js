@@ -230,7 +230,7 @@ const FieldStudyGuide = () => {
                 alt="실험 준비 방법 순서도" 
                 style={{
                   maxWidth: '100%',
-                  width: window.innerWidth > 768 ? '600px' : '95%',
+                  width: window.innerWidth > 768 ? '760px' : '98%',
                   height: 'auto',
                   borderRadius: '8px',
                   display: 'block',
