@@ -76,7 +76,7 @@ const FieldStudyGuide = () => {
     { value: 'pairing', label: '갤럭시 워치와 스마트폰 페어링 하는 법' },
     { value: 'dev-mode', label: 'Dev mode 활성화 하는 법' },
     { value: 'app-install', label: '갤럭시 워치 KIST 어플 설치하는 법' },
-    { value: 'web-registration', label: 'KIST 통합관제시스템 회원가입 및 근무일정 설명' },
+    { value: 'web-registration', label: '실증 실험 모니터링 시스템 회원가입 및 근무일정 설명' },
     { value: 'monitoring-usage', label: 'KIST 건강 모니터링 어플 사용법' },
     { value: 'voice-recording', label: '하루 연상 단어 음성으로 녹음하기' },
     { value: 'samsung-health-download', label: '삼성 헬스 데이터 다운로드 및 전송 방법' },
