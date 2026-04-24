@@ -861,9 +861,9 @@ const FieldStudyGuide = () => {
                   <h3 style={{ fontSize: '18px' }}>📈 오토측정 안내</h3>
                   <ul style={{ fontSize: '16px', lineHeight: '1.8', color: '#333' }}>
                     <li>오토측정은 회원가입 다음 날부터 자동진행됩니다.</li>
-                    <li>오토측정은 하루 12회, 1시간 간격으로 자동 측정되며, 각 측정은 1분 동안 진행됩니다.</li>
+                    <li>오토측정은 1시간 간격으로 자동 측정되며, 각 측정은 1분 동안 진행됩니다.</li>
                     <li>측정이 끝나면 스트레스 알림이 표시되며(→2번 사진 참고), 알림을 클릭하여 스트레스 점수를 선택해주세요.</li>
-                    <li>스트레스가 있는 상태면 <img src={getImageUrl('field-study-guide/07-monitoring-usage/auto-measure/auto_measure-7.png')} alt="스트레스" style={{width: '20px', height: '20px', display: 'inline', verticalAlign: 'middle', margin: '0 2px'}} /> 스트레스가 없는 상태면 <img src={getImageUrl('field-study-guide/07-monitoring-usage/auto-measure/auto_measure-8.png')} alt="스트레스" style={{width: '20px', height: '20px', display: 'inline', verticalAlign: 'middle', margin: '0 2px'}} /> (→3번 사진 참고)으로 표시됩니다. 정오를 판단하기 위해 이어지는 화면에서 자신이 실제 느끼는 스트레스 강도를 숫자로 선택해주세요.</li>
+                    <li>스트레스가 있는 상태면 <img src={getImageUrl('field-study-guide/07-monitoring-usage/auto-measure/auto_measure-7.png')} alt="스트레스" style={{width: '20px', height: '20px', display: 'inline', verticalAlign: 'middle', margin: '0 2px'}} /> 스트레스가 없는 상태면 <img src={getImageUrl('field-study-guide/07-monitoring-usage/auto-measure/auto_measure-8.png')} alt="스트레스" style={{width: '20px', height: '20px', display: 'inline', verticalAlign: 'middle', margin: '0 2px'}} /> (→3번 사진 참고)으로 표시됩니다. 측정후 팝업이 뜨면 실제 느끼는 스트레스 수준을 없음/1/2/3 중 선택해 피드백을 완료하십시오.</li>
                     <li>스트레스 점수를 선택하지 않을 시 진동이 울립니다.</li>
                   </ul>
                 </div>
@@ -872,12 +872,12 @@ const FieldStudyGuide = () => {
                   <h3 style={{ fontSize: '18px' }}>🔎 오토측정 횟수 확인 방법</h3>
                   <ul style={{ fontSize: '16px', lineHeight: '1.8', color: '#333' }}>
                     <li>[오토측정중] 버튼 옆의 빨간색 숫자는 <img src={getImageUrl('field-study-guide/07-monitoring-usage/auto-measure/auto_measure-9.png')} alt="0" style={{width: '30px', height: '30px', display: 'inline', verticalAlign: 'middle', margin: '0 2px'}} /> 오늘 완료된 오토측정 횟수를 의미합니다.</li>
-                    <li>숫자가 6 미만이면 1시간 정도의 간격을 두고 [맥파측정] 버튼을 눌러 수동으로 측정해주세요.</li>
+                    <li>숫자가 3 미만일 경우 1시간 간격으로 알림이 오면 최소 3회 이상 응답이 필요합니다.</li>
                   </ul>
                   
                   <div style={{ textAlign: 'center', margin: '20px 0' }}>
                     <img 
-                      src={getImageUrl('field-study-guide/07-monitoring-usage/auto-measure/auto_measure-6.png')} 
+                      src={getImageUrl('field-study-guide/07-monitoring-usage/auto-measure/auto_measure-6_new.png')} 
                       alt="오토측정 상태 확인" 
                       style={{
                         ...squareImageStyle,
