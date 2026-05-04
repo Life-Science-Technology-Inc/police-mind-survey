@@ -78,6 +78,14 @@ npm run deploy
   - `희망 참여일` 컬럼을 `스트레스점수` 바로 다음 위치로 이동
   - 관리자 상단 충원 목표의 기본 fallback 값을 `30 / 30 / 40`으로 조정
 
+### 2026-05-04
+
+- `src/components/ExperimentCompletePage.js` 수정
+  - 상단 경찰청/한국과학기술연구원 로고 2개 제거
+- `src/components/DataCollectionGuide.js` 수정
+  - 오픈 카카오톡 검색어 `'2025경찰실증'` → `'2026경찰실증'`으로 변경
+- GitHub Pages 재배포
+
 ### 2026-04-24
 
 - Supabase 운영 환경 설정 갱신
