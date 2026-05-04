@@ -321,7 +321,7 @@ const DataCollectionGuide = () => {
           <p>본 실험 과정에 대한 문의는 오픈 카카오톡으로 하실 수 있습니다
             (<a href="https://open.kakao.com/o/gTH3TfCg" target="_blank" rel="noopener noreferrer">
                 https://open.kakao.com/o/gTH3TfCg
-            </a>, <strong>'2025경찰실증'</strong>으로 검색)</p>
+            </a>, <strong>'2026경찰실증'</strong>으로 검색)</p>
         </div>
 
         {/* 실증 참여 섹션 - 항상 표시 */}

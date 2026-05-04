@@ -24,27 +24,6 @@ const ExperimentCompletePage = () => {
 
   return (
     <div className="home-container">
-      <div className="logo-section">
-        <div className="logo-container">
-          <img 
-            src={`${process.env.PUBLIC_URL}/police_logo.png`}
-            alt="경찰청 로고" 
-            className="logo police-logo"
-            onError={(e) => {
-              e.target.style.display = 'none';
-            }}  
-          />
-          <img 
-            src={`${process.env.PUBLIC_URL}/kist_logo.png`}
-            alt="한국과학기술연구원 로고" 
-            className="logo kist-logo"
-            onError={(e) => {
-              e.target.style.display = 'none';
-            }}
-          />
-        </div>
-      </div>
-      
       <header className="home-header">
         <h1>[경찰 건강 스마트 관리 R&amp;D]</h1>
       </header>
