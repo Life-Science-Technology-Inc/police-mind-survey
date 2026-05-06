@@ -250,7 +250,7 @@ const FieldStudyGuide = () => {
               <h3>
                 1. 
                 <a 
-                      href="https://health-user.lstgrp.com/#/login" 
+                      href="https://lst-healthmonitor.web.app/auth/login" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       style={{ color: 'red', fontWeight: 'bold', textDecoration: 'underline' }}
