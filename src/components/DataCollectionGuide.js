@@ -16,8 +16,8 @@ const formatPreferredSessionsForStorage = (preferredSession) =>
 
 const DataCollectionGuide = () => {
   const preferredSessionOptions = [
-    { id: 'round1', label: '1차 실험(2026. 5. 11 ~)' },
-    { id: 'round2', label: '2차 실험(2026. 5. 26 ~)' },
+    { id: 'round1', label: '1차 실험(2026. 5. 13 ~)' },
+    { id: 'round2', label: '2차 실험(2026. 5. 27 ~)' },
     { id: 'noPreference', label: '상관없음' },
   ];
 
@@ -282,9 +282,9 @@ const DataCollectionGuide = () => {
             <li>
               실험 기간: <strong>측정 시작 후 개인별 1주일</strong>
               <br />
-              <strong>1차: 26. 5. 11(월) ~</strong>
+              <strong>1차: 26. 5. 13(수) ~</strong>
               <br />
-              <strong>2차: 26. 5. 26(화) ~</strong>
+              <strong>2차: 26. 5. 27(수) ~</strong>
             </li>
           </ul>
         </div>
